@@ -9,5 +9,5 @@ $(function() {
 });
 
 (function($) {
-	
+	ыыы
 })(jQuery);
