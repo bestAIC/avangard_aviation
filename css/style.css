@@ -2,10 +2,113 @@ html {
 /* 	-webkit-font-smoothing: antialiased; */
 }
 
-body {
-	background: #424b51;
+/* Elements */
+* {margin:0; padding:0;}
+HTML {height:100%;}
+BODY {height:100%; background:#fff; color:#000; font:15px "Helvetica Neue",Helvetica,Arial,sans-serif; min-width:1220px;}
+TABLE {border-spacing:0; border-collapse:collapse;}
+TD,TH {vertical-align:top; text-align:left;}
+IMG,FIELDSET {border:none;}
+IMG {max-width:100%; height:auto;vertical-align: bottom;}
+A {text-decoration:none; color:#0173c1;}
+A:hover {color:#013e83;}
+P {line-height:1.5em;}
+UL, UL LI {list-style-type:none;}
+EM {font-style:normal;}
+
+/* fonts */
+
+@font-face {
+    font-family: 'circeregular';
+    src: url('fonts/circe-webfont.eot');
+    src: url('fonts/circe-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/circe-webfont.woff2') format('woff2'),
+         url('fonts/circe-webfont.woff') format('woff'),
+         url('fonts/circe-webfont.ttf') format('truetype'),
+         url('fonts/circe-webfont.svg#circeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
+@font-face {
+    font-family: 'circe-lightregular';
+    src: url('circe-light-webfont.eot');
+    src: url('circe-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('circe-light-webfont.woff2') format('woff2'),
+         url('circe-light-webfont.woff') format('woff'),
+         url('circe-light-webfont.ttf') format('truetype'),
+         url('circe-light-webfont.svg#circe-lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+
+body {
+	min-width: 1024px;
+	max-width: 1980px;
+	font: 18px "Helvetica Neue",Helvetica,Arial,sans-serif;
+	color: #fff;
+	font-weight: 300;
+	text-align: center;
+}
 h1{
-	
+	font-family: 'circe-lightregular', sans-serif;
+	font-size: 100px;
+	text-align: center;
+	font-weight: 100;
+}
+
+
+
+
+.container-fluid{
+	padding: 0;
+}
+#header{
+	background: #fff url('../pic/pic_1.jpg') top left no-repeat;
+	background-size: contain;
+	min-height: 1080px;
+	padding: 0 14px;
+}
+
+#header h1{
+	color: #fff;
+}
+
+#header .logo{
+	text-align: center;
+	line-height: 100px;
+}
+#header .logo img{
+	vertical-align: middle;
+}
+
+.header_top{
+	border-bottom: 1px solid #aab3b5;
+}
+
+
+#footer{
+	background: #1a2633;
+	min-height: 340px;
+}
+
+.footer_menu{
+	text-align: left;
+}
+.footer_menu li{
+	float: left;
+	margin-left: 10px;
+}
+.footer_menu a{
+	color: #ffa905;
+}
+.footer_autor{
+	border-top: 1px solid #aab3b5;
 }
