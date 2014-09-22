@@ -47,7 +47,7 @@ include('inc/head.php');
 	<header id="header" class="color_1">
 		<div class="header_shadow"></div>
 		<div class="row header_top">
-			<nav class="col-lg-4 menu_top">
+			<nav class="col-xs-4 menu_top">
 				<a href="#0" class="menu_top-btn">
 					<span class="menu_top-ico"><span></span></span>
 					<span class="menu_top-txt">Menu</span>
@@ -60,8 +60,8 @@ include('inc/head.php');
 					<li><a href="#0"></a></li>
 				</ul>
 			</nav>
-			<div class="col-lg-4 logo"><a href="#0"><img src="img/logo.png"  alt="logo"></a></div>
-			<div class="col-lg-4 lang-b">
+			<div class="col-xs-4 logo"><a href="#0"><img src="img/logo.png"  alt="logo"></a></div>
+			<div class="col-xs-4 lang-b">
 				<div class="lang_wrap">
 					<a href="#0" class="lang_btn">Leave request</a>
 					
@@ -73,10 +73,6 @@ include('inc/head.php');
 						</ul>
 					</div>
 				</div>
-			</div>
-		</div>
-		<div class="row header_cont">
-			<div class="col-lg-offset-2 col-lg-8 header_cont-wrap">
 			</div>
 		</div>
 	</header>
