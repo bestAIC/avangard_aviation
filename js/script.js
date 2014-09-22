@@ -11,8 +11,8 @@ $(function() {
 		$("#footer").addClass("navbar-fixed-bottom");
 	}
 
-
 	$(window).animateCollage();
+	
 });
 
 
@@ -20,40 +20,39 @@ $(function() {
 	$.fn.animateCollage = function(options){
 		var win = $(this);
 
-		win.scroll(function(e){
-		 	// Вычисляем ширину блока HTML
-			// var w = $('html').width();
-			// var h = $('html').height();    
-		 	// Вычисляем позицию курсора в пикселях относительно центра
-			// var x = (w/2 - e.pageX)/5;
-			// var y = (h/2 - e.pageY)/2;
-
-			var img = $('#animate_index_2'),
+		win.on('scroll', function(e){
+			var contFirst = $('.js-cont-height'),
 				windowH = win.height(),
 				scrollTop = win.scrollTop(),
-				posA1 = img.offset().top;
-				console.log('Scroll: ' + scrollTop);
-				console.log('PositionA1: ' + posA1);
-				console.log('windowH: ' + windowH)
+				img1 = $('#animate_index_1'),
+				img2 = $('#animate_index_2'),
+				posA1 = img1.offset().top;
 
-				if(posA1 > scrollTop){
-					img.addClass('test')
-				} else {
-					img.removeClass('test')
+				contFirst.css({
+					position: 'relative',
+					height: windowH
+				});
+
+				if(windowH + scrollTop > posA1){
+					img1.addClass('active').css({position: 'absolute'})
+					img2.addClass('active')
 				}
-				
-				
-
-				// img.css({
-				// 	left: scrollTop
-				// });
-
-		 	// Используя делитель добиваемся разной скорости движения фона уровней
-					// $('#animate_index_2').css({
-			  //     left:100+y
-			  //     top:0+y
-			  //   });
-
+			return false;
 		}); 
-}
+
+		var that = $('.js-collage_down'),
+		windowH = $(window).height(),
+		$contFirst = $('.js-cont-height');
+
+		that.on('click', function(){
+
+			$contFirst.css({position: 'relative', height: windowH})
+
+			$('body').animate({
+				scrollTop: $('.collage.second').offset().top
+			}, 800)
+			return false;
+		})
+	}
 })(jQuery);
+

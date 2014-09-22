@@ -75,14 +75,20 @@ h2{
 	height: 50px;
 	border-radius: 4px;
 	display: inline-block;
-	padding: 10px 4px;
+	padding: 10px 20px;
 	font-size: 18px;
 	font-weight: 300;
 	letter-spacing: 0.3px;
+	transition: background-color .25s, color .25s, border-color .25s;
 }
 .btn.color_1{
 	border: 2px solid #000;
 	color: #36424c;
+}
+.btn.color_1:hover{
+	background-color: #263a4c;
+	color: #e5e7e9;
+	border-color: #263a4c;
 }
 .btn.color_2{
 	border: 2px solid #fff;
@@ -99,7 +105,7 @@ h2{
 	left: 0;
 	width: 100%;
 	padding: 0 15px;
-	z-index: 1;
+	z-index: 10;
 }
 
 #header.color_1{
@@ -337,6 +343,33 @@ h2{
 .collage{
 	position: relative;
 }
+.collage.first{
+	position: fixed;
+	z-index: 9;
+	height: 100%;
+	width: 100%;
+}
+.collage.first .collage_img{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.avangard_index .collage.first .collage_img{
+	background: url('../pic/pic_2.jpg') 50% 50% no-repeat;
+	background-size: cover;
+}
+.collage_down{
+	background: url('../img/ico_4.png') center no-repeat;
+	height: 22px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin: 0;
+	width: 100%;
+	margin-bottom: 46px;
+	cursor: pointer;
+}
+
 .about_text{
 	color: #29343e;
 }
@@ -361,12 +394,6 @@ h2{
 	line-height: 30px;
 	margin-bottom: 30px;
 }
-.avangard_index .collage .collage_img{
-	position: relative;
-}
-.avangard_index .collage .collage_img img{
-	width: 100%;
-}
 
 .avangard_index .collage.first .about_text.left{
 	width: 350px;
@@ -374,8 +401,8 @@ h2{
 	margin: -100px;
 	margin-left: -25%;
 }
-.avangard_index .collage.first .collage_img{
-	min-width: 1140px;
+.avangard_index .collage .collage_img{
+	height: 100%;
 }
 
 
@@ -403,12 +430,31 @@ h2{
 	width: 880px;
 	margin: 0 auto;
 }
-.avangard_index .collage.second .collage_img{
-	left: -1190px;
-	top: 60px;
-}
-.avangard_index .collage.second .collage_img img{
+#animate_index_1{
 	width: auto;
+	top: 60px;
+	position: relative;
+	opacity: 0;
+	transform: translateX(800px);
+	-webkit-transition: -webkit-transform 2s ease-out,opacity .8s ease-in-out;
+	transition: transform 2s ease-out,opacity .8s ease-in-out;
+}
+#animate_index_1.active{
+	opacity: 1;
+	transform: translateX(-50px);
+}
+#animate_index_2{
+	width: auto;
+	top: 60px;
+	position: relative;
+	opacity: 0;
+	transform: translateX(-800px);
+	-webkit-transition: -webkit-transform 2s ease-out,opacity .8s ease-in-out;
+	transition: transform 2s ease-out,opacity .8s ease-in-out;
+}
+#animate_index_2.active{
+	opacity: 1;
+	transform: translateX(-50px);
 }
 
 
