@@ -72,9 +72,11 @@ h1{
 	padding: 10px 4px;
 	font-size: 18px;
 	font-weight: 300;
+	letter-spacing: 0.3px;
 }
 .btn.color_1{
 	border: 2px solid #000;
+	color: #36424c;
 }
 .btn.color_2{
 	border: 2px solid #fff;
@@ -262,14 +264,20 @@ h1{
 .about_text-b .right{
 	text-align: left;
 }
+.about_text{
+	color: #29343e;
+}
 .avangard_index .collage.first .about_text{
 	width: 350px;
 	position: absolute;
 	bottom: 500px;
 	left: 150px;
-	color: #29343e;
 	line-height: 30px;
 	font-size: 20px;
+}
+.avangard_index .collage.first .about_text p{
+	font-size: 20px;
+	line-height: 30px;
 }
 /* Collage */
 #footer{
