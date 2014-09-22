@@ -30,7 +30,7 @@ include('include/header.php')
 		<div class="collage_img"><img id="animate_index_2" src="pic/pic_4.jpg" alt=""></div>
 	</section>
 	<section class="collage fourth">
-		<div class="about_text left">
+		<div class="about_text">
 			<h2>Managed Aircraft</h2>
 			<p>is the world leader in private aviation, with a portfolio of services that includes fractional ownership, jet cards, aircraft management and charter.</p>
 			<div class="btn color_1">Learn more</div>
