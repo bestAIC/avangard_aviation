@@ -354,11 +354,14 @@ h1{
 }
 .avangard_index .collage.first .about_text{
 	width: 350px;
+	height: 120px;
 	position: absolute;
-	bottom: 500px;
-	left: 150px;
 	line-height: 30px;
 	font-size: 20px;
+	top: 50%;
+	left: 50%;
+	margin: -100px;
+	margin-left: -25%;
 }
 .avangard_index .collage.first .about_text p{
 	font-size: 20px;

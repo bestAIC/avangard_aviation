@@ -6,13 +6,9 @@ include('include/header.php')
 	<section class="collage first">
 		<div class="img-holder" id="animate_index_1"><img src="pic/pic_2.jpg" alt=""></div>
 
-		<div class="row">
-			<div class="col-lg-offset-2 col-lg-8 about_text">
-				<div class="about_text-b left">
-					<p>is the world leader in private aviation, with a portfolio of services</p>
-					<div class="btn color_1"><span>About us</span></div>
-				</div>
-			</div>
+		<div class="about_text left">
+			<p>is the world leader in private aviation, with a portfolio of services</p>
+			<div class="btn color_1"><span>About us</span></div>
 		</div>
 	</section>
 	<section class="collage second">
