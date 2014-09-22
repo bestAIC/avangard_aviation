@@ -240,46 +240,7 @@ h1{
 }
 
 
-/* Collage */
 
-.collage{
-	position: relative;
-}
-.collage.first{
-	background: #fff 50% 50% no-repeat;
-	background-size: cover;
-	min-height: 1080px;
-	padding: 0 14px;
-}
-.avangard_index .collage.first{
-	background-image: url('../pic/pic_2.jpg');
-}
-
-.about_text-b .left{
-	text-align: left;
-}
-.about_text-b .center{
-	text-align: left;
-}
-.about_text-b .right{
-	text-align: left;
-}
-.about_text{
-	color: #29343e;
-}
-.avangard_index .collage.first .about_text{
-	width: 350px;
-	position: absolute;
-	bottom: 500px;
-	left: 150px;
-	line-height: 30px;
-	font-size: 20px;
-}
-.avangard_index .collage.first .about_text p{
-	font-size: 20px;
-	line-height: 30px;
-}
-/* Collage */
 #footer{
 	background: #1a2633;
 	min-height: 340px;
@@ -365,12 +326,51 @@ h1{
 	font-size: 16px;
 }
 
+/* Collage */
 
+.collage{
+	position: relative;
+}
+/*.collage.first{
+	background: #fff 50% 50% no-repeat;
+	background-size: cover;
+	min-height: 1080px;
+}
+.avangard_index .collage.first{
+	background-image: url('../pic/pic_2.jpg');
+}*/
+
+.about_text-b .left{
+	text-align: left;
+}
+.about_text-b .center{
+	text-align: left;
+}
+.about_text-b .right{
+	text-align: left;
+}
+.about_text{
+	color: #29343e;
+}
+.avangard_index .collage.first .about_text{
+	width: 350px;
+	position: absolute;
+	bottom: 500px;
+	left: 150px;
+	line-height: 30px;
+	font-size: 20px;
+}
+.avangard_index .collage.first .about_text p{
+	font-size: 20px;
+	line-height: 30px;
+}
+/* Collage */
 
 /* GENERAL */
 
-.animate-block.type_1{
+.avangard_index .collage.second{
 	vertical-align: middle;
+	text-align: center;
 	line-height: 650px;
 	background: rgb(172,207,230); /* Old browsers */
 	background: -moz-linear-gradient(top,  rgba(172,207,230,1) 34%, rgba(227,239,247,1) 100%); /* FF3.6+ */
@@ -380,7 +380,12 @@ h1{
 	background: -ms-linear-gradient(top,  rgba(172,207,230,1) 34%,rgba(227,239,247,1) 100%); /* IE10+ */
 	background: linear-gradient(to bottom,  rgba(172,207,230,1) 34%,rgba(227,239,247,1) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#accfe6', endColorstr='#e3eff7',GradientType=0 ); /* IE6-9 */
-
+}
+.avangard_index .collage.second .about_text{
+	line-height: 1;
+}
+.avangard_index .collage.second .about_text h2{
+	margin: 0;
 }
 
 /* /GENERAL */

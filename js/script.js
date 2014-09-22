@@ -10,4 +10,14 @@ $(function() {
 	if ($(document).height() <= $(window).height()){
 		$("#footer").addClass("navbar-fixed-bottom");
 	}
+
+	$('#animate_index_1').animateIndexFirst();
 });
+
+
+(function($){
+	$.fn.animateIndexFirst = function(options){
+		var that = $(this);
+
+	}
+})(jQuery);

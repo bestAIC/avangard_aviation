@@ -3,8 +3,10 @@ $pagename = 'avangard_index';
 $pagetitle = 'Avangard Aviation';
 include('include/header.php')
 ?>
-	<section>
-		<div class="row collage first">
+	<section class="collage first">
+		<div class="img-holder" id="animate_index_1"><img src="pic/pic_2.jpg" alt=""></div>
+
+		<div class="row">
 			<div class="col-lg-offset-2 col-lg-8 about_text">
 				<div class="about_text-b left">
 					<p>is the world leader in private aviation, with a portfolio of services</p>
@@ -12,9 +14,16 @@ include('include/header.php')
 				</div>
 			</div>
 		</div>
-		<div class="animate-block type_1">
-			<img src="pic/pic_3.png" alt="">
+	</section>
+	<section class="collage second">
+		<div class="row">
+			<div class="about_text">
+				<h2>Private Flights</h2>
+				<p>is the world leader in private aviation, with a portfolio of services that includes fractional ownership, jet cards, aircraft management and charter.</p>
+				<div class="btn color_1">Learn more</div>
+			</div>
 		</div>
+		<div class="img-holder" id="animate_index_2"><img src="pic/pic_3.png" alt=""></div>
 	</section>
 
 <?
