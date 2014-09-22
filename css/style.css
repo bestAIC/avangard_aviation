@@ -20,24 +20,24 @@ EM {font-style:normal;}
 
 @font-face {
     font-family: 'circeregular';
-    src: url('fonts/circe-webfont.eot');
-    src: url('fonts/circe-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/circe-webfont.woff2') format('woff2'),
-         url('fonts/circe-webfont.woff') format('woff'),
-         url('fonts/circe-webfont.ttf') format('truetype'),
-         url('fonts/circe-webfont.svg#circeregular') format('svg');
+    src: url('../fonts/circe-webfont.eot');
+    src: url('../fonts/circe-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/circe-webfont.woff2') format('woff2'),
+         url('../fonts/circe-webfont.woff') format('woff'),
+         url('../fonts/circe-webfont.ttf') format('truetype'),
+         url('../fonts/circe-webfont.svg#circeregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'circe-lightregular';
-    src: url('circe-light-webfont.eot');
-    src: url('circe-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('circe-light-webfont.woff2') format('woff2'),
-         url('circe-light-webfont.woff') format('woff'),
-         url('circe-light-webfont.ttf') format('truetype'),
-         url('circe-light-webfont.svg#circe-lightregular') format('svg');
+    src: url('../fonts/circe-light-webfont.eot');
+    src: url('../fonts/circe-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/circe-light-webfont.woff2') format('woff2'),
+         url('../fonts/circe-light-webfont.woff') format('woff'),
+         url('../fonts/circe-light-webfont.ttf') format('truetype'),
+         url('../fonts/circe-light-webfont.svg#circe-lightregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -90,6 +90,12 @@ h1{
 	font-size: 100px;
 	text-align: center;
 	font-weight: 100;
+}
+h2{
+	font-family: 'circe-lightregular', sans-serif;
+	font-weight: 300;
+	font-size: 70px;
+	line-height: 1;
 }
 
 .btn{
@@ -359,42 +365,47 @@ h1{
 .collage{
 	position: relative;
 }
-/*.collage.first{
-	background: #fff 50% 50% no-repeat;
-	background-size: cover;
-	min-height: 1080px;
-}
-.avangard_index .collage.first{
-	background-image: url('../pic/pic_2.jpg');
-}*/
-
-.about_text-b .left{
-	text-align: left;
-}
-.about_text-b .center{
-	text-align: left;
-}
-.about_text-b .right{
-	text-align: left;
-}
 .about_text{
 	color: #29343e;
 }
-.avangard_index .collage.first .about_text{
-	width: 350px;
-	position: absolute;
-	bottom: 500px;
-	left: 150px;
-	line-height: 30px;
-	font-size: 20px;
+.about_text.center{
+	text-align: center;
 }
-.avangard_index .collage.first .about_text p{
-	font-size: 20px;
-	line-height: 30px;
-}
-/* Collage */
 
-/* GENERAL */
+.avangard_index .collage .about_text{
+	position: absolute;
+	line-height: 30px;
+	font-size: 20px;
+	top: 50%;
+	left: 50%;
+	z-index: 1;
+}
+.avangard_index .collage .about_text h2{
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.avangard_index .collage .about_text p{
+	font-size: 20px;
+	line-height: 30px;
+	margin-bottom: 30px;
+}
+.avangard_index .collage .collage_img{
+	position: relative;
+}
+.avangard_index .collage .collage_img img{
+	width: 100%;
+}
+
+.avangard_index .collage.first .about_text.left{
+	width: 350px;
+	height: 120px;
+	margin: -100px;
+	margin-left: -25%;
+}
+.avangard_index .collage.first .collage_img{
+	min-width: 1140px;
+}
+
 
 .avangard_index .collage.second{
 	vertical-align: middle;
@@ -410,10 +421,36 @@ h1{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#accfe6', endColorstr='#e3eff7',GradientType=0 ); /* IE6-9 */
 }
 .avangard_index .collage.second .about_text{
-	line-height: 1;
-}
-.avangard_index .collage.second .about_text h2{
+	top: auto;
+	left: auto;
 	margin: 0;
+	width: 100%;
+	padding-top: 100px;
+}
+.avangard_index .collage.second .about_text-wrap{
+	width: 880px;
+	margin: 0 auto;
+}
+.avangard_index .collage.second .collage_img{
+	left: -1190px;
+	top: 60px;
+}
+.avangard_index .collage.second .collage_img img{
+	width: auto;
 }
 
-/* /GENERAL */
+
+.avangard_index .collage.third .about_text{
+	min-height: 340px;
+	width: 640px;
+	margin: -150px;
+	margin-left: 40px;
+}
+.avangard_index .collage.fourth .about_text{
+	min-height: 340px;
+	width: 530px;
+	margin: -150px;
+	margin-left: -660px;
+}	
+
+/* /Collage */
