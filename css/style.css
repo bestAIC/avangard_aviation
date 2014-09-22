@@ -64,19 +64,34 @@ h1{
 	font-weight: 100;
 }
 
-
-
+.btn{
+	min-width: 110px;
+	height: 50px;
+	border-radius: 4px;
+	display: inline-block;
+	padding: 10px 4px;
+	font-size: 18px;
+	font-weight: 300;
+}
+.btn.color_1{
+	border: 2px solid #000;
+}
+.btn.color_2{
+	border: 2px solid #fff;
+}
 
 .container-fluid{
 	padding: 0;
 	min-width: 1180px;
 }
+
 #header{
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	padding: 0 15px;
+	z-index: 1;
 }
 
 #header.color_1{
@@ -191,9 +206,9 @@ h1{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeb529', endColorstr='#e5ae27',GradientType=0 ); /* IE6-9 */
 }
 .header_top .lang_dropdown{
-	width: 90px;
+	min-width: 90px;
 	height: 50px;
-	border: 2px solid #fff;
+	border: 2px solid #fff;	
 	border-radius: 4px;
 	margin-bottom: 0;
 	margin-left: 20px;
@@ -222,14 +237,41 @@ h1{
 	color: #fff;
 }
 
-.screen_first{
-	background: #fff url('../pic/pic_2.jpg') 50% 50% no-repeat;
+
+/* Collage */
+
+.collage{
+	position: relative;
+}
+.collage.first{
+	background: #fff 50% 50% no-repeat;
 	background-size: cover;
 	min-height: 1080px;
 	padding: 0 14px;
 }
+.avangard_index .collage.first{
+	background-image: url('../pic/pic_2.jpg');
+}
 
-
+.about_text-b .left{
+	text-align: left;
+}
+.about_text-b .center{
+	text-align: left;
+}
+.about_text-b .right{
+	text-align: left;
+}
+.avangard_index .collage.first .about_text{
+	width: 350px;
+	position: absolute;
+	bottom: 500px;
+	left: 150px;
+	color: #29343e;
+	line-height: 30px;
+	font-size: 20px;
+}
+/* Collage */
 #footer{
 	background: #1a2633;
 	min-height: 340px;

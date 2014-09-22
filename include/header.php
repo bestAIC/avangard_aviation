@@ -1,9 +1,3 @@
-<?
-$pagename = 'job';
-$pagetitle = 'Вакансии';
-include('inc/head.php');
-?>
-
 <!DOCTYPE html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ru"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ru"> <![endif]-->
@@ -42,7 +36,16 @@ include('inc/head.php');
 	<script src="js/script.js"></script>
 
 </head>
-<body>
+<? if($pagename == 'avangard_index') { ?>
+	<body class="avangard_index">
+<? } else if($pagename == 'avangard_about') { ?>
+	<body class="avangard_about">
+<? } else if($pagename == 'avangard_tehnical') { ?>
+	<body class="avangard_tehnical">
+<? } else { ?>
+	<body>
+<? } ?>
+
 <div class="container-fluid">
 	<header id="header" class="color_1">
 		<div class="header_shadow"></div>
