@@ -463,7 +463,7 @@ h2{
 	font-size: 16px;
 }
 
-/* Collage */
+/* avangard_index */
 
 .collage{
 	position: relative;
@@ -547,8 +547,6 @@ h2{
 	position: relative;
 	z-index: 2;
 }
-
-
 
 
 .about_text{
@@ -659,6 +657,12 @@ h2{
 	width: 530px;
 	margin: -150px;
 	margin-left: -660px;
-}	
+}
 
-/* /Collage */
+/* /avangard_index */
+
+/* avangard_about */
+.avangard_about .collage.first img{
+	width: auto;
+}
+/* /avangard_about */

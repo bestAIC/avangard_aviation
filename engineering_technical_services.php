@@ -140,8 +140,16 @@ include('include/header.php')
 	<section class="text">
 		<div class="intro">
 			<div class="left">
+				<span class="ico_11"></span>
+				<h4>Private Flights</h4>
+				<p>is the world leader in private aviation, with a portfolio of services that includes fractional ownership, jet cards, aircraft management and charter</p>
+				<p><a href="#">Learn more</a></p>
 			</div>
 			<div class="right">
+				<span class="ico_12"></span>
+				<h4>Managed Aircraft</h4>
+				<p>is the world leader in private aviation, with a portfolio of services that includes fractional ownership, jet сards, aircraft management and charter</p>
+				<p><a href="#">Learn more</a></p>			
 			</div>			
 		</div>
 	</section>
