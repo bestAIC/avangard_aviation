@@ -93,6 +93,30 @@ h2{
 .btn.color_2{
 	border: 2px solid #fff;
 }
+.btn.yellow{
+	background: -moz-linear-gradient(top,  rgba(238,181,41,1) 49%, rgba(229,174,39,1) 50%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(49%,rgba(238,181,41,1)), color-stop(50%,rgba(229,174,39,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(238,181,41,1) 49%,rgba(229,174,39,1) 50%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(238,181,41,1) 49%,rgba(229,174,39,1) 50%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(238,181,41,1) 49%,rgba(229,174,39,1) 50%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(238,181,41,1) 49%,rgba(229,174,39,1) 50%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeb529', endColorstr='#e5ae27',GradientType=0 ); /* IE6-9 */
+	transition: all .25s;
+}
+.btn.yellow:hover{
+	background: rgb(255,181,0); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(255,181,0,1) 49%, rgba(240,171,0,1) 50%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(49%,rgba(255,181,0,1)), color-stop(50%,rgba(240,171,0,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(255,181,0,1) 49%,rgba(240,171,0,1) 50%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(255,181,0,1) 49%,rgba(240,171,0,1) 50%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(255,181,0,1) 49%,rgba(240,171,0,1) 50%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(255,181,0,1) 49%,rgba(240,171,0,1) 50%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb500', endColorstr='#f0ab00',GradientType=0 ); /* IE6-9 */
+}
+.btn.yellow span{
+	margin-top: 1px;
+	display: inline-block;
+}
 
 .container-fluid{
 	padding: 0;
@@ -200,24 +224,9 @@ h2{
 }
 .header_top .lang_btn{
 	width: 170px;
-	height: 50px;
-	display: inline-block;
 	vertical-align: middle;
 	text-align: center;
-	font-size: 18px;
-	font-weight: 300;
 	color: #3c2f00;
-	text-decoration: none;
-	line-height: 50px;
-	border-radius: 4px;
-	transition: background-color .25s;
-	background: -moz-linear-gradient(top,  rgba(238,181,41,1) 49%, rgba(229,174,39,1) 50%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(49%,rgba(238,181,41,1)), color-stop(50%,rgba(229,174,39,1))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  rgba(238,181,41,1) 49%,rgba(229,174,39,1) 50%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  rgba(238,181,41,1) 49%,rgba(229,174,39,1) 50%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  rgba(238,181,41,1) 49%,rgba(229,174,39,1) 50%); /* IE10+ */
-	background: linear-gradient(to bottom,  rgba(238,181,41,1) 49%,rgba(229,174,39,1) 50%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeb529', endColorstr='#e5ae27',GradientType=0 ); /* IE6-9 */
 }
 .header_top .lang_dropdown{
 	min-width: 90px;
@@ -237,6 +246,28 @@ h2{
 	color: #fff;
 	text-decoration: none;
 	cursor: pointer;
+	background-color: transparent;
+	-webkit-transition: background .25s, color .25s;
+	-o-transition: background .25s, color .25s;
+	transition: background .25s, color .25s;
+}
+
+.header_top .lang_lnk:hover{
+	background-color: #fff;
+	color: #001124;
+}
+.header_top .lang_lnk:hover:after{
+	background: url('../img/icons_n.png') -23px 0 no-repeat;
+}
+.header_top .lang_lnk:after{
+	content: "";
+	background: url('../img/icons_n.png') 0 0 no-repeat;
+	display: inline-block;
+	width: 13px;
+	height: 8px;
+	line-height: 18px;
+	vertical-align: middle;
+	margin-left: 10px;
 }
 .header_top .lang_dropdown-menu{
 	right: 0;
@@ -244,7 +275,7 @@ h2{
 	background: transparent;
 	box-shadow: none;
 	border: 2px solid #fff;
-	top: 72px;
+	top: 94px;
 	min-width: 90px;
 	line-height: 1;
 	padding: 10px 14px;
@@ -401,8 +432,11 @@ h2{
 	margin: -100px;
 	margin-left: -25%;
 }
-.avangard_index .collage .collage_img{
+.collage .collage_img{
 	height: 100%;
+}
+.collage .collage_img img{
+	width: 100%;
 }
 
 
@@ -455,6 +489,12 @@ h2{
 #animate_index_2.active{
 	opacity: 1;
 	transform: translateX(-50px);
+}
+
+#animate_index_3,
+#animate_index_4{
+	opacity: 0;
+	transition: opacity 2s;
 }
 
 
