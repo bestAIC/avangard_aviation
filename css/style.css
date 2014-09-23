@@ -243,23 +243,37 @@ h2{
 	position: relative;
 	display: block;
 	padding: 14px;
-	color: #fff;
 	text-decoration: none;
 	cursor: pointer;
 	background-color: transparent;
-	-webkit-transition: background .25s, color .25s;
-	-o-transition: background .25s, color .25s;
-	transition: background .25s, color .25s;
+	color: #fff;
+	-webkit-transition: background-color .25s, color .25s;
+	-o-transition: background-color .25s, color .25s;
+	transition: background-color .25s, color .25s;
 }
-
 .header_top .lang_lnk:hover{
 	background-color: #fff;
 	color: #001124;
 }
-.header_top .lang_lnk:hover:after{
-	background: url('../img/icons_n.png') -23px 0 no-repeat;
-}
 .header_top .lang_lnk:after{
+	content: "";
+	background: url('../img/icons_n.png') -23px 0 no-repeat;
+	display: inline-block;
+	width: 13px;
+	height: 8px;
+	line-height: 18px;
+	vertical-align: middle;
+	margin-left: 10px;
+	opacity: 0;
+	z-index: 1;
+	-webkit-transition: opacity .25s;
+	-o-transition: opacity .25s;
+	transition: opacity .25s;
+}
+.header_top .lang_lnk:hover:after{
+	opacity: 1;
+}
+.header_top .lang_lnk:before{
 	content: "";
 	background: url('../img/icons_n.png') 0 0 no-repeat;
 	display: inline-block;
@@ -267,21 +281,46 @@ h2{
 	height: 8px;
 	line-height: 18px;
 	vertical-align: middle;
-	margin-left: 10px;
+	position: absolute;
+	right: 16px;
+	top: 20px;
+	opacity: 1;
+	-webkit-transition: opacity .25s;
+	-o-transition: opacity .25s;
+	transition: opacity .25s;
 }
+.header_top .lang_lnk:hover:before{
+	opacity: 0;
+}
+
 .header_top .lang_dropdown-menu{
 	right: 0;
 	left: auto;
-	background: transparent;
 	box-shadow: none;
 	border: 2px solid #fff;
 	top: 94px;
 	min-width: 90px;
 	line-height: 1;
-	padding: 10px 14px;
-	color: #fff;
+	color: #001124;
+	padding: 0;
+	margin: 0;
 }
-
+.header_top .lang_dropdown-menu li{
+	cursor: pointer;
+	padding: 17px 16px 18px;
+	font-size: 18px;
+	border-top: 1px solid #e5e7e9;
+	background-color: #fff;
+	-webkit-transition: background-color .25s;
+	-o-transition: background-color .25s;
+	transition: background-color .25s;	
+}
+.header_top .lang_dropdown-menu li:first-child{
+	border-top: none;
+}
+.header_top .lang_dropdown-menu li:hover{
+	background-color: #e5e7e9;
+}
 
 
 #footer{
@@ -373,6 +412,7 @@ h2{
 
 .collage{
 	position: relative;
+	overflow: hidden;
 }
 .collage.first{
 	position: fixed;
