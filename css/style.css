@@ -428,8 +428,10 @@ h2{
 	height: 100%;
 }
 .avangard_index .collage.first .collage_img{
-	background: url('../pic/pic_2.jpg') 50% 50% no-repeat;
-	background-size: cover;
+	background: url('../pic/pic_2.jpg') 50% 50% / cover no-repeat;
+}
+.avangard_about .collage.first .collage_img{
+	background: #5999ca url('../pic/pic_7.png') 50% 0 repeat-x;
 }
 .collage_down{
 	background: url('../img/ico_4.png') center no-repeat;

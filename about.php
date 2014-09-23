@@ -1,5 +1,5 @@
 <?
-$pagename = 'avangard_index';
+$pagename = 'avangard_about';
 $pagetitle = 'Avangard Aviation';
 include('include/header.php')
 ?>
@@ -19,7 +19,7 @@ include('include/header.php')
 				<div class="btn color_1">Learn more</div>
 			</div>
 		</div>
-		<div class="collage_img"><img id="animate_index_1" class="js-animate_to" src="pic/pic_6.png" alt=""><img id="animate_index_2" src="pic/pic_3.png" alt=""></div>
+		<div class="collage_img"><img id="animate_index_3" class="js-animate_to" src="pic/pic_8.png" alt=""><img id="animate_index_2" src="pic/pic_9.png" alt=""></div>
 	</section>
 	<section class="collage third">
 		<div class="about_text" id="animate_index_3">
