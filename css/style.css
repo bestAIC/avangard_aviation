@@ -661,4 +661,8 @@ h2{
 
 /* /avangard_index */
 
-
+/* avangard_about */
+.avangard_about .collage.first img{
+	width: auto;
+}
+/* /avangard_about */
