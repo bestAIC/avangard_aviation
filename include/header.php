@@ -40,8 +40,8 @@
 	<body class="avangard_index">
 <? } else if($pagename == 'avangard_about') { ?>
 	<body class="avangard_about">
-<? } else if($pagename == 'avangard_tehnical') { ?>
-	<body class="avangard_tehnical">
+<? } else if($pagename == 'avangard_engineering_technical_services') { ?>
+	<body class="avangard_engineering_technical_services">
 <? } else { ?>
 	<body>
 <? } ?>

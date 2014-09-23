@@ -80,7 +80,6 @@ EM {font-style:normal;}
 body {
 	width: 100%;
 	font: 18px "Helvetica Neue",Helvetica,Arial,sans-serif;
-	color: #fff;
 	font-weight: 300;
 	letter-spacing: 0.2px;
 	min-width: 100%;
@@ -386,6 +385,13 @@ h2{
 	background: url('../pic/pic_2.jpg') 50% 50% no-repeat;
 	background-size: cover;
 }
+
+.avangard_engineering_technical_services .collage.first .collage_img{
+	background: url('../pic/pic_22.jpg') 50% 50% no-repeat;
+	background-size: cover;
+	padding:360px 0;	
+}
+
 .collage_down{
 	background: url('../img/ico_4.png') center no-repeat;
 	height: 22px;
@@ -396,6 +402,11 @@ h2{
 	width: 100%;
 	margin-bottom: 46px;
 	cursor: pointer;
+}
+
+.intro {
+	width: 50%;
+	margin: 0 auto;
 }
 
 .about_text{
