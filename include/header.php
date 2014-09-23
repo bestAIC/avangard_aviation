@@ -66,7 +66,7 @@
 			<div class="col-xs-4 logo"><a href="#0"><img src="img/logo.png"  alt="logo"></a></div>
 			<div class="col-xs-4 lang-b">
 				<div class="lang_wrap">
-					<a href="#0" class="lang_btn">Leave request</a>
+					<a href="#0" class="btn yellow lang_btn"><span>Leave request</span></a>
 					
 					<div class="lang_dropdown dropdown">
 						<a class="lang_lnk current" data-toggle="dropdown">Eng</a>
