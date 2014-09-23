@@ -53,18 +53,18 @@ $(function() {
 			return false;
 		}); 
 
-		// var that = $('.js-collage_down'),
-		// windowH = $(window).height(),
-		// $contFirst = $('.js-cont-height');
+		var that = $('.js-collage_down'),
+		windowH = $(window).height(),
+		$contFirst = $('.js-cont-height');
 
-		// that.on('click', function(){
-		// 	$contFirst.css({position: 'relative', height: windowH})
+		that.on('click', function(){
+			$contFirst.css({position: 'relative', height: windowH})
 
-		// 	$('body').animate({
-		// 		scrollTop: $('.collage.second').offset().top
-		// 	}, 800)
-		// 	return false;
-		// });
+			$('body').animate({
+				scrollTop: $('.collage.second').offset().top
+			}, 800)
+			return false;
+		});
 	}
 })(jQuery);
 
