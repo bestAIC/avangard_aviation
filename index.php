@@ -3,7 +3,7 @@ $pagename = 'avangard_index';
 $pagetitle = 'Avangard Aviation';
 include('include/header.php')
 ?>
-	<section class="collage first js-cont-height">
+	<section class="collage first" id="js-cont-height">
 		<div class="collage_img"></div>
 		<div class="about_text left">
 			<p>is the world leader in private aviation, with a portfolio of services</p>
