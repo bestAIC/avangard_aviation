@@ -43,9 +43,41 @@ EM {font-style:normal;}
 }
 
 /*sprite*/
-.sprite-icon_1{ background-position: 0 0; width: 97px; height: 107px; } 
-.sprite-icon_10{ background-position: 0 -117px; width: 157px; height: 69px; } 
-.sprite-icon_11{ background-position: 0 -196px; width: 123px; height: 118px; } 
+.tbl-icons span.ico_1 {
+	background-position: 0 0; width: 97px; height: 107px;
+}
+.tbl-icons span.ico_2 {
+	background-position: 0 -1068px; width: 158px; height: 81px; 
+}
+.tbl-icons span.ico_3 {
+	background-position: 0 -1867px; width: 112px; height: 88px;
+}
+.tbl-icons span.ico_4 {
+	background-position: 0 -1965px; width: 76px; height: 74px;
+}
+.tbl-icons span.ico_5 {
+	background-position: -270px 0; width: 100px; height: 105px;
+}
+.tbl-icons span.ico_6 {
+	background-position: -270px -115px; width: 78px; height: 105px;
+}
+.tbl-icons span.ico_7 {
+	background-position: -270px -230px; width: 113px; height: 94px;
+}
+.tbl-icons span.ico_8 {
+	background-position: -270px -334px; width: 118px; height: 102px;
+}
+.tbl-icons span.ico_9 {
+	background-position: -270px -446px; width: 135px; height: 87px;
+}
+.tbl-icons span.ico_10 {
+	background-position: 0 -117px; width: 157px; height: 69px;
+}
+.tbl-icons span.ico_11 {
+	background-position: 0 -196px; width: 123px; height: 118px;
+}
+
+
 .sprite-icon_12{ background-position: 0 -324px; width: 112px; height: 77px; } 
 .sprite-icon_13{ background-position: 0 -411px; width: 104px; height: 74px; } 
 .sprite-icon_14{ background-position: 0 -495px; width: 133px; height: 76px; } 
@@ -54,20 +86,13 @@ EM {font-style:normal;}
 .sprite-icon_17{ background-position: 0 -779px; width: 99px; height: 83px; } 
 .sprite-icon_18{ background-position: 0 -872px; width: 121px; height: 86px; } 
 .sprite-icon_19{ background-position: 0 -968px; width: 90px; height: 90px; } 
-.sprite-icon_2{ background-position: 0 -1068px; width: 158px; height: 81px; } 
 .sprite-icon_20{ background-position: 0 -1159px; width: 79px; height: 94px; } 
 .sprite-icon_21{ background-position: 0 -1263px; width: 188px; height: 106px; } 
 .sprite-icon_22{ background-position: 0 -1379px; width: 111px; height: 91px; } 
 .sprite-icon_23{ background-position: 0 -1480px; width: 260px; height: 126px; } 
 .sprite-icon_24{ background-position: 0 -1616px; width: 177px; height: 111px; } 
 .sprite-icon_25{ background-position: 0 -1737px; width: 174px; height: 120px; } 
-.sprite-icon_3{ background-position: 0 -1867px; width: 112px; height: 88px; } 
-.sprite-icon_4{ background-position: 0 -1965px; width: 76px; height: 74px; } 
-.sprite-icon_5{ background-position: -270px 0; width: 100px; height: 105px; } 
-.sprite-icon_6{ background-position: -270px -115px; width: 78px; height: 105px; } 
-.sprite-icon_7{ background-position: -270px -230px; width: 113px; height: 94px; } 
-.sprite-icon_8{ background-position: -270px -334px; width: 118px; height: 102px; } 
-.sprite-icon_9{ background-position: -270px -446px; width: 135px; height: 87px; } 
+
 /**/
 
 .fl{
@@ -148,6 +173,7 @@ h2{
 .container-fluid{
 	padding: 0;
 	min-width: 1180px;
+	overflow: hidden;
 }
 
 #header{
@@ -475,10 +501,51 @@ h2{
 	cursor: pointer;
 }
 
-.intro {
+.intro,
+.text H2 {
 	width: 50%;
 	margin: 0 auto;
+	text-align: center;
 }
+
+.tbl-icons {
+	width: 65%;
+	margin: 0 auto;
+}
+
+.tbl-icons TD {
+	text-align: center;
+	vertical-align: middle;
+	padding:40px;
+}
+
+.tbl-icons .odd TD {
+	vertical-align: top;
+	padding:0 40px;
+}
+
+.tbl-icons span {
+	display:block;
+	margin: 0 auto;
+	background: url('../img/sprite_icon.png') 0 0 no-repeat;
+}
+
+.collage.second {
+	overflow: hidden;
+}
+
+.collage.second IMG {
+	position: absolute;
+	top:-300px;	
+}
+
+.collage.second .intro {
+	position: relative;
+	z-index: 2;
+}
+
+
+
 
 .about_text{
 	color: #29343e;

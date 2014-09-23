@@ -19,58 +19,102 @@ include('include/header.php')
 			<tr>
 				<td colspan="2">
 					<span class="ico_1"></span>
-					<p class="note">Base maintenance up to and including heavy checks</p>
 				</td>
 				<td colspan="2">
 					<span class="ico_2"></span>
-					<p class="note">Line maintenance at our line maintenance stations and on-call elsewhere</p>
 				</td>
 				<td colspan="2">
 					<span class="ico_3"></span>
-					<p class="note">AOG services including a “Go Team” ready to travel on short notice</p>
 				</td>
 			</tr>
+			<tr class="odd">
+				<td colspan="2">
+					<p class="note">Base maintenance up to and including heavy checks</p>
+				</td>
+				<td colspan="2">
+					<p class="note">Line maintenance at our line maintenance stations and on-call elsewhere</p>
+				</td>
+				<td colspan="2">
+					<p class="note">AOG services including a “Go Team” ready to travel on short notice</p>
+				</td>
+			</tr>			
 			<tr>
 				<td colspan="2">
 					<span class="ico_4"></span>
-					<p class="note">Troubleshooting, modifications and systems upgrades</p>
 				</td>
 				<td colspan="2">
 					<span class="ico_5"></span>
-					<p class="note">Engineering services</p>
 				</td>
 				<td colspan="2">
 					<span class="ico_6"></span>
-					<p class="note">Factory-authorized warranty work</p>
 				</td>
 			</tr>
+			<tr  class="odd">
+				<td colspan="2">
+					<p class="note">Troubleshooting, modifications and systems upgrades</p>
+				</td>
+				<td colspan="2">
+					<p class="note">Engineering services</p>
+				</td>
+				<td colspan="2">
+					<p class="note">Factory-authorized warranty work</p>
+				</td>
+			</tr>			
 			<tr>
 				<td colspan="2">
 					<span class="ico_7"></span>
-					<p class="note">Spare parts inventory management, logistics, supply and exchange</p>
 				</td>
 				<td colspan="2">
 					<span class="ico_8"></span>
-					<p class="note">Full interior and exterior cleaning, repairs and updates</p>
 				</td>
 				<td colspan="2">
 					<span class="ico_9"></span>
-					<p class="note">Ground handling and VIP lounge at our modern hangar facility</p>
 				</td>
 			</tr>
+			<tr  class="odd">
+				<td colspan="2">
+					<p class="note">Spare parts inventory management, logistics, supply and exchange</p>
+				</td>
+				<td colspan="2">
+					<p class="note">Full interior and exterior cleaning, repairs and updates</p>
+				</td>
+				<td colspan="2">
+					<p class="note">Ground handling and VIP lounge at our modern hangar facility</p>
+				</td>
+			</tr>			
 			<tr>
 				<td colspan="3">
 					<span class="ico_10"></span>
-					<p class="note">Aircraft parking and storage, short-term and long-term at our spacious facility</p>
 				</td>
 				<td colspan="3">
 					<span class="ico_11"></span>
-					<p class="note">Line maintenance station with personnel, hangar parts and equipment at Moscow</p>
 				</td>
 			</tr>
+			<tr  class="odd">
+				<td colspan="3">
+					<p class="note">Aircraft parking and storage, short-term and long-term at our spacious facility</p>
+				</td>
+				<td colspan="3">
+					<p class="note">Line maintenance station with personnel, hangar parts and equipment at Moscow</p>
+				</td>
+			</tr>			
 		</table>
 
 	</section>
+	<section class="collage second">
+		<div class="intro">
+			<h3>Our team of German engineers is capable of handling any and all of your aircraft technical needs</h3>
+			<p>Our location at Baden Airpark in the heart of central Europe reduces your ferry flight costs while our low overhead and stringent cost controls, combined with our respect for your time and your money, minimize your expenses.</p>
+			<p>Quick access to several major commercial airports allows our AOG “Go Team” to be on-site anywhere in the world, rapidly.</p>
+		</div>
+		<img src="/pic/pic_21.jpg">
+	</section>
+	<section class="text">
+		<div class="intro">
+			<h3>Our team of German engineers is capable of handling any and all of your aircraft technical needs</h3>
+		</div>
+	</section>
+
 <?
 include('include/footer.php')
 ?>
