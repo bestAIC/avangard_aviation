@@ -8,7 +8,7 @@ function animateCollage(){
 		windowH = win.height(),
 		contFirst = $('#js-cont-height'),
 		btn = $('.js-collage_down', contFirst),
-		imgTo = $('div.collage_img .js-animate_to'),
+		imgTo = $('.js-animate_to'),
 		img1 = $('#animate_index_1'),
 		img2 = $('#animate_index_2'),
 		textCnt1 = $('#animate_index_3'),
@@ -17,9 +17,10 @@ function animateCollage(){
 		posA2 = textCnt1.offset().top,
 		posA3 = textCnt2.offset().top;
 
-	contFirst.css({position: 'relative'});
-	contFirst.css({height: windowH});
-
+	contFirst.css({
+		position: 'relative',
+		height: windowH
+	});
 	
 	win.on('scroll', myScroll1);
 	win.on('scroll', myScroll2);

@@ -15,7 +15,7 @@ include('include/header.php')
 	<section class="text">
 		<h2>We offer the full range of technical services including:</h2>
 
-		<table class="tbl-icons">
+		<table class="tbl-icons js-animate_to">
 			<tr>
 				<td colspan="2">
 					<span class="ico_1"></span>
@@ -135,6 +135,14 @@ include('include/header.php')
 				</li>				
 			</ul>	
 			</form>
+		</div>
+	</section>
+	<section class="text">
+		<div class="intro">
+			<div class="left">
+			</div>
+			<div class="right">
+			</div>			
 		</div>
 	</section>
 
