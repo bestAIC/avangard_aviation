@@ -3,7 +3,7 @@ $pagename = 'avangard_engineering_technical_services';
 $pagetitle = 'Avangard Aviation';
 include('include/header.php')
 ?>
-	<section class="collage first js-cont-height">
+	<section id="js-cont-height" class="collage first">
 		<div class="collage_img">
 			<div class="intro">
 				<h1>Engineering & Technical Services</h1>
@@ -111,7 +111,30 @@ include('include/header.php')
 	</section>
 	<section class="text">
 		<div class="intro">
-			<h3>Our team of German engineers is capable of handling any and all of your aircraft technical needs</h3>
+			<h3>See what a difference meticulous German engineering quality combined with low overhead and respect for your time and expense can make for you</h3>
+			<form action="engineering_technical_services_submit" method="get" accept-charset="utf-8">
+			<ul>
+				<li>
+					<select name="management">
+						<option>Services & management</option>
+					</select>
+				</li>
+				<li>
+					<select name="engineering">
+						<option>Engineering services</option>
+					</select>
+				</li>
+				<li>
+					<input type="mail" placeholder="E-mail" />
+				</li>
+				<li>
+					<textarea  placeholder="Message"></textarea>
+				</li>
+				<li>
+					<input type="button" value="send">
+				</li>				
+			</ul>	
+			</form>
 		</div>
 	</section>
 
