@@ -1,3 +1,5 @@
+
+
 $(document).ready(function() {
 	animateCollage();	
 
@@ -5,6 +7,7 @@ $(document).ready(function() {
 
 
 function animateCollage(){
+	lock = 0;
 	var win = $(window),
 		windowH = win.height(),
 		contFirst = $('#js-cont-height'),
@@ -28,17 +31,23 @@ function animateCollage(){
 			posTopScroll = (topScroll + windowH/2);
 
 		if(scrollPos > posA1){
-			lock = 1;
-			img1.addClass('active').css({position: 'absolute', top: 0});
-			img2.addClass('active');
+			if(lock == 0){
+				lock = 1;
+				img1.addClass('active').css({position: 'absolute', top: 0});
+				img2.addClass('active');
+			}
 		}
 		if(posTopScroll > posA2){
-			lock = 1;
-			textCnt1.css({opacity: 1});
+			if(lock == 1){
+				lock = 2;
+				textCnt1.css({opacity: 1});
+			}
 		}
 		if(posTopScroll > posA3){
-			lock = 1;
-			textCnt2.css({opacity: 1});
+			if(lock == 2){
+				lock = 3;
+				textCnt2.css({opacity: 1});
+			}
 		}
 
 		return false;
