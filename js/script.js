@@ -160,11 +160,11 @@ $(function() {
 (function($){
 	$.fn.animateImg3 = function(){
 		var cont = $(this),
-			win = $(window),
-			posEl = cont.offset().top;
+			win = $(window);
 
 		win.on('scroll', function(){
-			var posWin = win.scrollTop(),
+			var posEl = cont.offset().top,
+				posWin = win.scrollTop(),
 				heightW = win.height;
 
 				if(posEl < windowH + posWin + 50){
