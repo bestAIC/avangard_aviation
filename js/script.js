@@ -145,7 +145,7 @@ $(function() {
 				posWin = win.scrollTop(),
 				heightW = win.height;
 
-				if(posEl > windowH + posWin/3){
+				if(posEl > windowH - 200){
 					cont.addClass('action');
 				} else {
 					cont.removeClass('action');
