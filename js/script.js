@@ -1,6 +1,7 @@
 var touchdevice = false,
 	win = $(window),
 	windowH = win.height();
+	
 
 
 
@@ -21,7 +22,7 @@ $(function() {
 	}
 
 	if($('#animate_index_5').length){
-		$('#animate_index_5').airMouseMove();
+		$('#animate_index_5').airLoadMove();
 	}
 
 	if($('#animate_index_6').length){
@@ -35,6 +36,11 @@ $(function() {
 	if($('#animate_index_8').length){
 		$('#animate_index_8').animateImg4();
 	}
+
+	if($('.collage_birds').length){
+		$('.collage_birds').animateImg5();
+	}
+
 });
 
 (function($){
@@ -110,20 +116,17 @@ $(function() {
 })(jQuery);
 
 (function($){
-	$.fn.airMouseMove = function(){
+	$.fn.airLoadMove = function(){
 		var that = $(this),
 			win = $(window),
 			heightW = $(window).height();
 
-		win.on('scroll', function(){
+		win.on('load', function(){
 			var scrollTop = win.scrollTop(),
 				posEl = that.offset();
 			
 			if(posEl.top < scrollTop+heightW){    
-				that.css({
-					top: 50,
-					left: 10
-				});
+				that.addClass('active');
 			}
 		});
 	}
@@ -141,8 +144,6 @@ $(function() {
 
 				if(posEl > windowH - 200){
 					cont.addClass('action');
-				} else {
-					cont.removeClass('action');
 				}
 		}).on('load', function(){
 			var posEl = cont.offset().top,
@@ -161,17 +162,15 @@ $(function() {
 (function($){
 	$.fn.animateImg3 = function(){
 		var cont = $(this),
-			win = $(window);
+			win = $(window),
+			posEl = cont.offset().top;
 
 		win.on('scroll', function(){
-			var posEl = cont.offset().top,
-				posWin = win.scrollTop(),
+			var posWin = win.scrollTop(),
 				heightW = win.height;
 
 				if(posEl < windowH + posWin + 50){
 					cont.addClass('action');
-				} else {
-					cont.removeClass('action');
 				}
 		})
 	}
@@ -189,9 +188,26 @@ $(function() {
 
 				if(posEl < windowH + posWin + 50){
 					cont.addClass('action');
-				} else {
-					cont.removeClass('action');
 				}
+		})
+	}
+})(jQuery);
+
+(function($){
+	$.fn.animateImg5 = function(){
+		var cont = $(this),
+			win = $(window);
+
+		win.on('scroll', function(){
+			var posEl = cont.offset().top,
+				posWin = win.scrollTop(),
+				heightW = win.height;
+
+			if(posEl < windowH + posWin + 50){
+				cont.addClass('action');
+			} else {
+				cont.removeClass('action');
+			}
 		})
 	}
 })(jQuery);
