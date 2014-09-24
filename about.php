@@ -3,39 +3,45 @@ $pagename = 'avangard_about';
 $pagetitle = 'Avangard Aviation';
 include('include/header.php')
 ?>
-	<section class="collage first" id="js-cont-height">
-		<div class="collage_img"></div>
-		<div class="about_text left">
-			<p>is the world leader in private aviation, with a portfolio of services</p>
-			<div class="btn color_1"><span>About us</span></div>
+	<section class="sect first">
+		<div class="collage_wrap">
+			<div class="about_text white">
+				<h1>Avangard Aviation</h1>
+				<p>Avangard Aviation represents both the best traditions and the best innovations in aviation</p>
+			</div>
 		</div>
-		<div class="collage_img"><img id="animate_index_5" src="pic/pic_8.png" alt=""><img id="animate_index_6" src="pic/pic_9.png" alt=""></div>
-		<div class="collage_down js-collage_down"></div>
+		<div class="collage_animate"><img id="animate_index_5" src="pic/pic_8.png" alt=""></div>
 	</section>
-	<section class="collage second">
-		<div class="about_text center">
-			<div class="about_text-wrap js-animate_to">
-				<h2>Private Flights</h2>
-				<p>is the world leader in private aviation, with a portfolio of services that includes fractional ownership, jet cards, aircraft management and charter.</p>
-				<div class="btn color_1">Learn more</div>
+	<section class="sect second">
+		<div class="collage_wrap">
+			<div class="collage_animate clearfix">
+				<div class="collage_pic-b"><img src="pic/pic_11.jpg" alt=""></div>
+				<div class="collage_text-b">
+					<h2>Flugbereitschaft</h2>
+					<p>The company takes pride in its 40-year history of precision and excellence in German aviation. Begun as a flight school in 1974 going by the name Flugbereitschaft, we enjoy a stellar reputation for our history of training pilots who have gone on to fly for airlines and private jets the world over, as well as for our operations and technical support services.</p>
+				</div>
+			</div>
+			<div class="collage_animate clearfix">
+				<div class="collage_text-b">
+					<h2>Avangard Aviation</h2>
+					<p>Upon the entry of new investors, the company has been renamed Avangard Aviation and still enjoys a reputation of excellence and high standards for aircraft maintenance and technical support services at our impeccable 25,000 square foot hangar facilities at Baden Airpark near the world-renowned cultural, spa and historic town of Baden-Baden, between Frankfurt, Germany; Strasbourg, France; and Basel, Switzerland. Avangard Aviation offers the finest of German engineering and technical support services ranging from line maintenance to major checks and overhaul, including a round-the-clock quick-response “Go Team” on stand-by, ready to support aircraft anywhere in the world, on short notice.</p>
+				</div>
+				<div class="collage_pic-b"><img src="pic/pic_12.jpg" alt=""></div>
+			</div>
+			<div class="collage_animate clearfix">
+				<div class="collage_pic-b"><img src="pic/pic_13.jpg" alt=""></div>
+				<div class="collage_text-b">
+					<h2>Baden Aircraft  Operations</h2>
+					<p>Avangard Aviation’s AOC organization, private and commercial aircraft operator, Baden Aircraft Operations, boasts an international team with combined hundreds of years’ experience in the management of airline, private jet and helicopter operations, asset management, sale, purchase, lease, operation and support of aircraft of all types, gained on all 6 Continents of the world, with the major aircraft and engine manufacturers, leading airlines and private jet operations around the world.</p>
+				</div>
 			</div>
 		</div>
 	</section>
-	<section class="collage third">
-		<div class="about_text">
-			<h2>Engineering<br/>  & Technical Services</h2>
-			<p>is the world leader in private aviation, with a portfolio of services that includes fractional ownership, jet cards, aircraft management and charter.</p>
-			<div class="btn color_1">Learn more</div>
+	<section class="sect third">
+		<div class="intro">
+			<h3>These three companies are combined under the Avangard Aviation banner to offer you</h3>
+			<p>Under one roof and a single management team – the complete range of services which you require to operate and support your aircraft as a machine tool to support your needs, reliably, efficiently and profitably from our ideal location in the center of Europe, as well as offering international chartered private jet services anywhere on Earth.</p>
 		</div>
-		<div class="collage_img"><img src="pic/pic_4.jpg" alt=""></div>
-	</section>
-	<section class="collage fourth">
-		<div class="about_text">
-			<h2>Managed Aircraft</h2>
-			<p>is the world leader in private aviation, with a portfolio of services that includes fractional ownership, jet cards, aircraft management and charter.</p>
-			<div class="btn color_1">Learn more</div>
-		</div>
-		<div class="collage_img"><img src="pic/pic_5.jpg" alt=""></div>
 	</section>
 
 <?

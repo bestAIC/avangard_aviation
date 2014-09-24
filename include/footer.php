@@ -1,3 +1,4 @@
+</div>	
 	<footer id="footer">
 		<div class="row">
 			<figure class="logo col-xs-3">
@@ -31,6 +32,5 @@
 			<div class="col-xs-4 autor"><a href="http://aic.ru"><span>Design by</span> <img src="img/aic.png" alt=""></a></div>
 		</div>
 	</footer>
-</div>
 </body>
 </html>
