@@ -5,14 +5,14 @@ html {
 /* Elements */
 * {margin:0; padding:0;}
 HTML {height:100%;}
-BODY {height:100%; background:#fff; color:#000; font:15px "Helvetica Neue",Helvetica,Arial,sans-serif; min-width:1220px;}
+BODY {height:100%; background:#fff; color:#32404c; font:15px "Helvetica Neue",Helvetica,Arial,sans-serif; min-width:1220px;}
 TABLE {border-spacing:0; border-collapse:collapse;}
 TD,TH {vertical-align:top; text-align:left;}
 IMG,FIELDSET {border:none;}
 IMG {max-width:100%; height:auto;}
 A {text-decoration:none; color:#0173c1;}
 A:hover {color:#013e83;}
-P {line-height:1.5em;}
+P {line-height:1.5em;letter-spacing: -0.1px}
 UL, UL LI {list-style-type:none;}
 EM {font-style:normal;}
 
@@ -77,7 +77,9 @@ EM {font-style:normal;}
 .tbl-icons span.ico_11 {
 	background-position: 0 -196px; width: 123px; height: 118px;
 }
-
+.features span.ico_22 {
+	background-position: 50px -1732px; width: 260px; height: 126px;
+}
 .features span.ico_23 {
 	background-position: 0 -1480px; width: 260px; height: 126px;
 }
@@ -85,6 +87,8 @@ EM {font-style:normal;}
 .features span.ico_24 {
 	background-position: 0 -1616px; width: 177px; height: 111px;
 }
+
+
 
 
 .sprite-icon_12{ background-position: 0 -324px; width: 112px; height: 77px; } 
@@ -135,6 +139,7 @@ h3{
 	font-weight: 300;
 	font-size: 50px;
 	line-height: 60px;
+	letter-spacing: -0.3px;
 }
 h4{
 	font-family: 'circe-lightregular', sans-serif;
@@ -593,7 +598,8 @@ INPUT.btn {
 	margin:0 0 1.5em 0;
 }
 
-.avangard_engineering_technical_services .text {
+.avangard_engineering_technical_services .text,
+.avangard_about .text {
 	padding:90px 0;
 }
 
@@ -663,8 +669,11 @@ INPUT.btn {
 	background: linear-gradient(to bottom,  rgba(247,223,87,1) 0%, rgba(255,169,4,1) 100%); /* W3C */	
 }
 
-.avangard_engineering_technical_services .features DIV {
+.avangard_engineering_technical_services .features DIV{
 	width:50%;
+}
+.avangard_about .features DIV{
+	width: 33%;
 }
 
 .feedback UL {
@@ -876,18 +885,49 @@ INPUT.btn {
 }
 .avangard_about .sect.second .collage_animate h2{
 	line-height: 80px;
-	margin-bottom: 22px;
+	margin-bottom: 18px;
 	margin-top: 10px;
 }
 .avangard_about .sect.second .collage_text-b p{
 	line-height: 30px;
+	margin-bottom: 0;
+}
+.avangard_about .collage_birds{
+	position: relative;
+	margin-bottom: 196px;
+}
+#animate_index_9{
+	position: absolute;
+	left: 60px;
+	top: 20px;
+	-webkit-transition: transform 1s ease-in-out 0.2s;
+	-o-transition: transform 1s ease-in-out 0.2s;
+	transition: transform 1s ease-in-out 0.2s;
+}
+#animate_index_10{
+	position: absolute;
+	right: -310px;
+	top: -80px;
+	-webkit-transition: transform 1s ease-in-out 0.2s;
+	-o-transition: transform 1s ease-in-out 0.2s;
+	transition: transform 1s ease-in-out 0.2s;
+}
+.collage_birds.action #animate_index_9{
+	transform: translateY(20px) scale(0.95);
+}
+.collage_birds.action #animate_index_10{
+	transform: translateY(-20px) scale(0.95);
 }
 
+
 #animate_index_5{
-	position: relative;
-	top: 0;
-	left: 0;
-	transition: all 1s;
+	transform: translateX(0px) translateY(0px);
+	opacity: 0.5;
+	transition: transform 1s ease-out, opacity 0.5s ease-in-out;
+}
+#animate_index_5.active{
+	opacity: 1;
+	transform: translateX(10px) translateY(30px);
 }
 
 #animate_index_6 .collage_pic-b,

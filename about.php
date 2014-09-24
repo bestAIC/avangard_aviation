@@ -35,12 +35,38 @@ include('include/header.php')
 					<p>Avangard Aviation’s AOC organization, private and commercial aircraft operator, Baden Aircraft Operations, boasts an international team with combined hundreds of years’ experience in the management of airline, private jet and helicopter operations, asset management, sale, purchase, lease, operation and support of aircraft of all types, gained on all 6 Continents of the world, with the major aircraft and engine manufacturers, leading airlines and private jet operations around the world.</p>
 				</div>
 			</div>
+			<div class="collage_birds">
+				<img src="pic/pic_15.png" alt="" id="animate_index_9" >
+				<img src="pic/pic_16.png" alt="" id="animate_index_10" >
+			</div>
 		</div>
 	</section>
 	<section class="sect third">
 		<div class="intro">
-			<h3>These three companies are combined under the Avangard Aviation banner to offer you</h3>
+			<h3>These three companies are combined under<br/> the Avangard Aviation banner to offer you</h3>
 			<p>Under one roof and a single management team – the complete range of services which you require to operate and support your aircraft as a machine tool to support your needs, reliably, efficiently and profitably from our ideal location in the center of Europe, as well as offering international chartered private jet services anywhere on Earth.</p>
+		</div>
+	</section>
+	<section class="text">
+		<div class="features">
+			<div class="left">
+				<p class="ico_cover"><span class="ico_22"></span></p>
+				<h4>Engineering & Technical Services</h4>
+				<p>is the world leader in private aviation, with a portfolio of services that includes fractional ownership, jet cards, aircraft management and charter</p>
+				<p><a href="#" class="more_info">Learn more</a></p>
+			</div>
+			<div class="left">
+				<p class="ico_cover"><span class="ico_23"></span></p>
+				<h4>Private<br/> Flights</h4>
+				<p>is the world leader in private aviation, with a portfolio of services that includes fractional ownership, jet cards, aircraft management and charter</p>
+				<p><a href="#" class="more_info">Learn more</a></p>
+			</div>
+			<div class="right">
+				<p class="ico_cover"><span class="ico_24"></span></p>
+				<h4>Private<br/> Flights</h4>
+				<p>is the world leader in private aviation, with a portfolio of services that includes fractional ownership, jet cards, aircraft management and charter</p>
+				<p><a href="#" class="more_info">Learn more</a></p>
+			</div>		
 		</div>
 	</section>
 
