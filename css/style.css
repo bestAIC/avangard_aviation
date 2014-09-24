@@ -152,8 +152,6 @@ SELECT {
 	padding: 20px;
 	box-sizing: border-box;
 	border:2px solid #556a7c;
-	height:55px;
-	line-height: 55px;
 	margin:0 0 20px 0; 
 }
 
@@ -179,6 +177,20 @@ INPUT.btn {
 	box-shadow: inset 0 -24px rgba(69,67,7,.05);	
 }
 
+.more_info {
+	position: relative;
+}
+
+.more_info:after {
+	content: " ";
+	position: relative;
+	width: 9px;
+	height: 15px;
+	background: url('../img/icons_n.png') 0px -13px no-repeat;
+	display: inline-block;
+	vertical-align: middle;
+	margin:-2px 0 0 10px;	
+}
 
 .bg_color_1 {
 	background-color: #f5f8fa;
@@ -656,7 +668,7 @@ INPUT.btn {
 }
 
 .feedback UL {
-	margin: 0 auto;
+	margin: 50px auto 0 auto;
 	width:50%;
 }
 

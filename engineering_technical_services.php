@@ -115,7 +115,7 @@ include('include/header.php')
 			<form action="engineering_technical_services_submit" method="get" accept-charset="utf-8" class="feedback">
 			<ul>
 				<li>
-					<select name="management>
+					<select name="management">
 						<option>Services & management</option>
 					</select>
 				</li>
@@ -143,13 +143,13 @@ include('include/header.php')
 				<p class="ico_cover"><span class="ico_23"></span></p>
 				<h4>Private Flights</h4>
 				<p>is the world leader in private aviation, with a portfolio of services that includes fractional ownership, jet cards, aircraft management and charter</p>
-				<p><a href="#">Learn more</a></p>
+				<p><a href="#" class="more_info">Learn more</a></p>
 			</div>
 			<div class="right">
 				<p class="ico_cover"><span class="ico_24"></span></p>
 				<h4>Managed Aircraft</h4>
 				<p>is the world leader in private aviation, with a portfolio of services that includes fractional ownership, jet сards, aircraft management and charter</p>
-				<p><a href="#">Learn more</a></p>			
+				<p><a href="#" class="more_info">Learn more</a></p>			
 			</div>			
 		</div>
 	</section>
