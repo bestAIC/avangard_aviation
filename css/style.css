@@ -251,7 +251,7 @@ INPUT.btn {
 
 .container-fluid{
 	padding: 0;
-	min-width: 940px;
+	min-width: 1220px;
 	overflow: hidden;
 }
 
@@ -260,7 +260,7 @@ INPUT.btn {
 	top: 0;
 	left: 0;
 	width: 100%;
-	padding: 0 15px;
+	padding: 0 50px;
 	z-index: 10;
 }
 
@@ -269,6 +269,7 @@ INPUT.btn {
 }
 .header_shadow{
 	width: 100%;
+	min-width: 1180px;
 	height: 204px;
 	position: absolute;
 	top: 0;
@@ -460,8 +461,12 @@ INPUT.btn {
 #footer{
 	background: #1a2633;
 	min-height: 340px;
-	padding: 25px 14px 0;
+	min-width: 1180px;
+	padding: 25px 0px 0;
 	overflow: hidden;
+}
+#footer .footer_contact{
+	padding: 0 50px;
 }
 #footer .logo{
 	text-align: center;
@@ -474,7 +479,7 @@ INPUT.btn {
 }
 .footer_menu li{
 	float: left;
-	margin-left: 38px;
+	margin-left: 22px;
 }
 .footer_menu li:first-child{
 	margin-left: 0;
@@ -529,9 +534,11 @@ INPUT.btn {
 .footer_autor .copyright{
 	font-size: 16px;
 	text-align: left;
+	padding-left: 50px;
 }
 .footer_autor .autor{
 	text-align: right;
+	padding-right: 50px;
 }
 .footer_autor .autor span{
 	line-height: 22px;
@@ -548,6 +555,7 @@ INPUT.btn {
 .collage{
 	position: relative;
 	overflow: hidden;
+	padding: 0 20px;
 }
 .collage.first{
 	position: fixed;
@@ -560,15 +568,45 @@ INPUT.btn {
 	width: 100%;
 	height: 100%;
 }
-.avangard_index .collage.first .collage_img{
+.avangard_index .collage.first{
 	background: url('../pic/pic_2.jpg') 50% 50% / cover no-repeat;
+}
+.avangard_index .collage.third{
+	background: url('../pic/pic_4.jpg') top left / cover no-repeat;	
+}
+.avangard_index .collage.fourth{
+	background: url('../pic/pic_5.jpg') top center / cover no-repeat;	
+}
+.avangard_index .collage .collage_wrap{
+	max-width: 1180px;
+	margin: 0 auto;
+}
+.avangard_index .collage.third .about_text{
+	position: relative;
+	top: auto;
+	left: auto;
+	margin: 10% auto;
+	width: 50%;
+	float: right;
+}
+.avangard_index .collage.fourth .about_text{
+	position: relative;
+	top: auto;
+	left: auto;
+	margin: 14% auto;
+	width: 50%;
+	float: left;
 }
 
 .avangard_about .collage.first .collage_img{
 	background: #5999ca url('../pic/pic_7.png') 50% 0 repeat-x;
 }
 
-.avangard_engineering_technical_services .collage.first .collage_img{
+/*.avangard_engineering_technical_services .collage.first .collage_img{
+	background: url('../pic/pic_22.jpg') 50% 50% no-repeat;
+	background-size: cover;
+}*/
+.avangard_engineering_technical_services .collage.first{
 	background: url('../pic/pic_22.jpg') 50% 50% no-repeat;
 	background-size: cover;
 }
@@ -818,18 +856,7 @@ INPUT.btn {
 }
 
 
-.avangard_index .collage.third .about_text{
-	min-height: 340px;
-	width: 640px;
-	margin: -150px;
-	margin-left: 40px;
-}
-.avangard_index .collage.fourth .about_text{
-	min-height: 340px;
-	width: 530px;
-	margin: -150px;
-	margin-left: -660px;
-}
+
 
 /* /avangard_index */
 
@@ -843,6 +870,9 @@ INPUT.btn {
 		background: url('../pic/pic_10.jpg') 50% 0 / cover no-repeat;
 		width: 100%;
 	}
+}
+.avangard_about .sect{
+	padding: 0 20px;
 }
 .avangard_about .sect.first{
 	margin: 192px 0;
@@ -872,12 +902,15 @@ INPUT.btn {
 	color: #32404c;
 	margin-bottom: 100px;
 }
+.avangard_about .sect.second .collage_animate div:first-child{
+	margin-right: 4%;
+}
 .avangard_about .sect.second .collage_text-b,
 .avangard_about .sect.second .collage_pic-b{
 	float: left;
 	width: 48%;
 	margin-left: -2px;
-	margin-right: 2%;
+	
 }
 
 .avangard_about .sect.second .collage_pic-b img{
@@ -923,7 +956,7 @@ INPUT.btn {
 #animate_index_5{
 	transform: translateX(0px) translateY(0px);
 	opacity: 0.5;
-	transition: transform 1s ease-out, opacity 0.5s ease-in-out;
+	transition: transform 1s ease-in, opacity 0.5s ease-in-out;
 }
 #animate_index_5.active{
 	opacity: 1;
