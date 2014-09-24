@@ -78,6 +78,14 @@ EM {font-style:normal;}
 	background-position: 0 -196px; width: 123px; height: 118px;
 }
 
+.features span.ico_23 {
+	background-position: 0 -1480px; width: 260px; height: 126px;
+}
+
+.features span.ico_24 {
+	background-position: 0 -1616px; width: 177px; height: 111px;
+}
+
 
 .sprite-icon_12{ background-position: 0 -324px; width: 112px; height: 77px; } 
 .sprite-icon_13{ background-position: 0 -411px; width: 104px; height: 74px; } 
@@ -127,6 +135,48 @@ h3{
 	font-weight: 300;
 	font-size: 50px;
 	line-height: 60px;
+}
+h4{
+	font-family: 'circe-lightregular', sans-serif;
+	font-weight: 300;
+	font-size: 30px;
+	line-height: 40px;
+}
+
+
+
+INPUT,
+SELECT {
+	display: block;
+	width: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+	border:2px solid #556a7c;
+	height:55px;
+	line-height: 55px;
+	margin:0 0 20px 0; 
+}
+
+TEXTAREA {
+	display: block;
+	width: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+	border:2px solid #556a7c;
+	margin:0 0 20px 0; 
+}
+
+INPUT.btn {
+	width: auto;
+	padding: 10px 50px;
+	float:left;
+	-webkit-border-radius: 2px; 
+	-moz-border-radius: 2px; 
+	border-radius: 2px; 
+	background-color: #eeb529; 
+	-webkit-box-shadow: inset 0 -24px rgba(69,67,7,.05); 
+	-moz-box-shadow: inset 0 -24px rgba(69,67,7,.05); 
+	box-shadow: inset 0 -24px rgba(69,67,7,.05);	
 }
 
 
@@ -523,11 +573,19 @@ h3{
 }
 
 .avangard_engineering_technical_services .collage.second {
-	padding:50px 0;
+	padding:20px 0;
+}
+
+.avangard_engineering_technical_services .collage.second P {
+	margin:0 0 1.5em 0;
 }
 
 .avangard_engineering_technical_services .text {
 	padding:90px 0;
+}
+
+.avangard_engineering_technical_services .text.second .intro {
+	color:#000;
 }
 
 .collage_down{
@@ -547,6 +605,58 @@ h3{
 	max-width: 1180px;
 	margin: 0 auto;
 	text-align: center;
+}
+
+.features {
+	max-width: 1180px;
+	margin: 0 auto;
+	text-align: center;
+	overflow: hidden;
+}
+
+.features A {
+	color:#ffa904;
+}
+
+.features DIV {
+	float:left;
+	position: relative;
+	padding: 0 60px;
+}
+
+.features .ico_cover {
+	height:150px;
+	margin:0;
+}
+
+.ico_cover SPAN {
+	display: block;
+	margin: 0 auto;
+	background: url('../img/sprite_icon.png') 0 0 no-repeat;
+}
+
+.features DIV.left:after {
+	content: '';
+	display: inline-block;
+	width: 1px;
+	height: 100%;
+	position: absolute;
+	top:0;
+	right:0;
+	background: -moz-linear-gradient(top,  rgba(247,223,87,1) 0%, rgba(255,169,4,1) 100%); /* FF3.6+ */
+	background: -webkit-linear-gradient(top,  rgba(247,223,87,1) 0%, rgba(255,169,4,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(247,223,87,1) 0%, rgba(255,169,4,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(247,223,87,1) 0%, rgba(255,169,4,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(247,223,87,1) 0%, rgba(255,169,4,1) 100%); /* W3C */	
+}
+
+.avangard_engineering_technical_services .features DIV {
+	width:50%;
+}
+
+.feedback UL {
+	margin: 0 auto;
+	width:50%;
 }
 
 .tbl-icons {

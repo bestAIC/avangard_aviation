@@ -12,7 +12,7 @@ include('include/header.php')
 		</div>
 		<div class="collage_down js-collage_down"></div>
 	</section>
-	<section class="text bg_color_1">
+	<section class="text first bg_color_1">
 		<h2>We offer the full range of technical services including:</h2>
 
 		<table class="tbl-icons js-animate_to">
@@ -109,13 +109,13 @@ include('include/header.php')
 		</div>
 		<img src="/pic/pic_21.jpg">
 	</section>
-	<section class="text bg_color_1">
+	<section class="text second bg_color_1">
 		<div class="intro">
 			<h3>See what a difference meticulous German engineering quality combined with low overhead and respect for your time and expense can make for you</h3>
-			<form action="engineering_technical_services_submit" method="get" accept-charset="utf-8">
+			<form action="engineering_technical_services_submit" method="get" accept-charset="utf-8" class="feedback">
 			<ul>
 				<li>
-					<select name="management">
+					<select name="management>
 						<option>Services & management</option>
 					</select>
 				</li>
@@ -131,22 +131,22 @@ include('include/header.php')
 					<textarea  placeholder="Message"></textarea>
 				</li>
 				<li>
-					<input type="button" value="send">
+					<input type="button" class="btn" value="Send">
 				</li>				
 			</ul>	
 			</form>
 		</div>
 	</section>
 	<section class="text">
-		<div class="intro">
+		<div class="features">
 			<div class="left">
-				<span class="ico_11"></span>
+				<p class="ico_cover"><span class="ico_23"></span></p>
 				<h4>Private Flights</h4>
 				<p>is the world leader in private aviation, with a portfolio of services that includes fractional ownership, jet cards, aircraft management and charter</p>
 				<p><a href="#">Learn more</a></p>
 			</div>
 			<div class="right">
-				<span class="ico_12"></span>
+				<p class="ico_cover"><span class="ico_24"></span></p>
 				<h4>Managed Aircraft</h4>
 				<p>is the world leader in private aviation, with a portfolio of services that includes fractional ownership, jet сards, aircraft management and charter</p>
 				<p><a href="#">Learn more</a></p>			
