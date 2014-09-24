@@ -115,7 +115,7 @@ include('include/header.php')
 			<form action="engineering_technical_services_submit" method="get" accept-charset="utf-8" class="feedback">
 			<ul>
 				<li>
-					<select name="management>
+					<select name="management">
 						<option>Services & management</option>
 					</select>
 				</li>

@@ -2,12 +2,6 @@ var touchdevice = false,
 	win = $(window),
 	windowH = win.height();
 
-$('.selectpicker').selectpicker();	
-
-
-(function($){
-	$('.selectpicker').selectpicker();	
-})(jQuery);
 
 
 $(function() {
