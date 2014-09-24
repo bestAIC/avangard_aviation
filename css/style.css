@@ -183,7 +183,7 @@ h3{
 }
 
 .container-fluid{
-	padding: 0 50px;
+	padding: 0;
 	min-width: 940px;
 	overflow: hidden;
 }
