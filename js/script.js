@@ -21,6 +21,18 @@ $(function() {
 	if($('#animate_index_5').length){
 		$('#animate_index_5').airMouseMove();
 	}
+
+	if($('#animate_index_6').length){
+		$('#animate_index_6').animateImg2();
+	}
+
+	if($('#animate_index_7').length){
+		$('#animate_index_7').animateImg3();
+	}
+
+	if($('#animate_index_8').length){
+		$('#animate_index_8').animateImg4();
+	}
 });
 
 (function($){
@@ -39,7 +51,7 @@ $(function() {
 
 		function myScroll1(){
 
-			contFirst.css({
+			$('.avangard_engineering_technical_services #js-cont-height').css({
 				height: 'auto'
 			});
 
@@ -97,17 +109,87 @@ $(function() {
 
 (function($){
 	$.fn.airMouseMove = function(){
-		$(window).scroll(function(){
-			var that = $(this),
-				heightW = $(window).height(),
-				scrollTop = $(this).scrollTop(),
-				posC = that.offset();
+		var that = $(this),
+			win = $(window),
+			heightW = $(window).height();
+
+		win.on('scroll', function(){
+			var scrollTop = win.scrollTop(),
+				posEl = that.offset();
 			
-			if(posC.top < scrollTop+heightW){    
+			if(posEl.top < scrollTop+heightW){    
 				that.css({
-					bottom: 400+((scrollTop-posC.top)/5)
+					top: 50,
+					left: 10
 				});
 			}
 		});
+	}
+})(jQuery);
+
+(function($){
+	$.fn.animateImg2 = function(){
+		var cont = $(this),
+			win = $(window);
+
+		win.on('scroll', function(){
+			var posEl = cont.offset().top,
+				posWin = win.scrollTop(),
+				heightW = win.height;
+
+				if(posEl > windowH + posWin/3){
+					cont.addClass('action');
+				} else {
+					cont.removeClass('action');
+				}
+		}).on('load', function(){
+			var posEl = cont.offset().top,
+				posWin = win.scrollTop(),
+				heightW = win.height;
+
+				if(posEl < windowH){
+					cont.addClass('static');
+				} else {
+					cont.removeClass('static');
+				}
+		})
+	}
+})(jQuery);
+
+(function($){
+	$.fn.animateImg3 = function(){
+		var cont = $(this),
+			win = $(window);
+
+		win.on('scroll', function(){
+			var posEl = cont.offset().top,
+				posWin = win.scrollTop(),
+				heightW = win.height;
+
+				if(posEl < windowH + posWin + 50){
+					cont.addClass('action');
+				} else {
+					cont.removeClass('action');
+				}
+		})
+	}
+})(jQuery);
+
+(function($){
+	$.fn.animateImg4 = function(){
+		var cont = $(this),
+			win = $(window);
+
+		win.on('scroll', function(){
+			var posEl = cont.offset().top,
+				posWin = win.scrollTop(),
+				heightW = win.height;
+
+				if(posEl < windowH + posWin + 50){
+					cont.addClass('action');
+				} else {
+					cont.removeClass('action');
+				}
+		})
 	}
 })(jQuery);
