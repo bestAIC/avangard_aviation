@@ -98,19 +98,15 @@ $(function() {
 (function($){
 	$.fn.airMouseMove = function(){
 		$(window).scroll(function(){
-			var heightW = $(window).height(); 
-			var scrollTop = $(this).scrollTop();
-			var posB1 = $('#bg_line_group .blue_line_1').offset();
-			var posB2 = $('#bg_line_group .blue_line_2').offset();
-			var posO1 = $('#bg_line_group .orange_line_1').offset();
-			var posC = $('.color_block').offset();
+			var that = $(this),
+				heightW = $(window).height(),
+				scrollTop = $(this).scrollTop(),
+				posC = that.offset();
 			
-			if($('.color_block').length){
-				if(posC.top < scrollTop+heightW){    
-					$('.color_block').css({
-						bottom: 400+((scrollTop-posC.top)/5)
-					});
-				}
+			if(posC.top < scrollTop+heightW){    
+				that.css({
+					bottom: 400+((scrollTop-posC.top)/5)
+				});
 			}
 		});
 	}
