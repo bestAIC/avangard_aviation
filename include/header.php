@@ -45,37 +45,37 @@
 <? } else { ?>
 	<body>
 <? } ?>
-
-<div class="container-fluid">
-	<header id="header" class="color_1">
-		<div class="header_shadow"></div>
-		<div class="row header_top">
-			<nav class="col-xs-4 menu_top">
-				<a href="#0" class="menu_top-btn">
-					<span class="menu_top-ico"><span></span></span>
-					<span class="menu_top-txt">Menu</span>
-				</a>
-				<ul class="list_item">
-					<li><a href="#0"></a></li>
-					<li><a href="#0"></a></li>
-					<li><a href="#0"></a></li>
-					<li><a href="#0"></a></li>
-					<li><a href="#0"></a></li>
-				</ul>
-			</nav>
-			<div class="col-xs-4 logo"><a href="#0"><img src="img/logo.png"  alt="logo"></a></div>
-			<div class="col-xs-4 lang-b">
-				<div class="lang_wrap">
-					<a href="#0" class="btn yellow lang_btn"><span>Leave request</span></a>
-					
-					<div class="lang_dropdown dropdown">
-						<a class="lang_lnk current" data-toggle="dropdown">Eng</a>
-						<ul class="lang_dropdown-menu dropdown-menu">
-							<li class="b-lang__lnk">Rus</li>
-							<li class="b-lang__lnk">Chi</li>
-						</ul>
-					</div>
+<header id="header" class="color_1">
+	<div class="header_shadow"></div>
+	<div class="row header_top">
+		<nav class="col-xs-4 menu_top">
+			<a href="#0" class="menu_top-btn">
+				<span class="menu_top-ico"><span></span></span>
+				<span class="menu_top-txt">Menu</span>
+			</a>
+			<ul class="list_item">
+				<li><a href="#0"></a></li>
+				<li><a href="#0"></a></li>
+				<li><a href="#0"></a></li>
+				<li><a href="#0"></a></li>
+				<li><a href="#0"></a></li>
+			</ul>
+		</nav>
+		<div class="col-xs-4 logo"><a href="#0"><img src="img/logo.png"  alt="logo"></a></div>
+		<div class="col-xs-4 lang-b">
+			<div class="lang_wrap">
+				<a href="#0" class="btn yellow lang_btn"><span>Leave request</span></a>
+				
+				<div class="lang_dropdown dropdown">
+					<a class="lang_lnk current" data-toggle="dropdown">Eng</a>
+					<ul class="lang_dropdown-menu dropdown-menu">
+						<li class="b-lang__lnk">Rus</li>
+						<li class="b-lang__lnk">Chi</li>
+					</ul>
 				</div>
 			</div>
 		</div>
-	</header>
+	</div>
+</header>
+<div class="container-fluid">
+	

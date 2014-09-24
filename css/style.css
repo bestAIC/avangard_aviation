@@ -19,18 +19,6 @@ EM {font-style:normal;}
 /* fonts */
 
 @font-face {
-    font-family: 'circeregular';
-    src: url('../fonts/circe-webfont.eot');
-    src: url('../fonts/circe-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/circe-webfont.woff2') format('woff2'),
-         url('../fonts/circe-webfont.woff') format('woff'),
-         url('../fonts/circe-webfont.ttf') format('truetype'),
-         url('../fonts/circe-webfont.svg#circeregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
     font-family: 'circe-lightregular';
     src: url('../fonts/circe-light-webfont.eot');
     src: url('../fonts/circe-light-webfont.eot?#iefix') format('embedded-opentype'),
@@ -40,6 +28,19 @@ EM {font-style:normal;}
          url('../fonts/circe-light-webfont.svg#circe-lightregular') format('svg');
     font-weight: normal;
     font-style: normal;
+}
+
+@font-face {
+    font-family: 'circe-extralightregular';
+    src: url('../fonts/circe-extralight-webfont.eot');
+    src: url('../fonts/circe-extralight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/circe-extralight-webfont.woff2') format('woff2'),
+         url('../fonts/circe-extralight-webfont.woff') format('woff'),
+         url('../fonts/circe-extralight-webfont.ttf') format('truetype'),
+         url('../fonts/circe-extralight-webfont.svg#circe-extralightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 /*sprite*/
@@ -110,7 +111,7 @@ body {
 	min-width: 100%;
 }
 h1{
-	font-family: 'circe-lightregular', sans-serif;
+	font-family: 'circe-extralightregular', sans-serif;
 	font-size: 100px;
 	text-align: center;
 	font-weight: 100;
@@ -121,6 +122,13 @@ h2{
 	font-size: 70px;
 	line-height: 1;
 }
+h3{
+	font-family: 'circe-lightregular', sans-serif;
+	font-weight: 300;
+	font-size: 50px;
+	line-height: 60px;
+}
+
 
 .btn{
 	min-width: 110px;
@@ -171,8 +179,8 @@ h2{
 }
 
 .container-fluid{
-	padding: 0;
-	min-width: 1180px;
+	padding: 0 50px;
+	min-width: 940px;
 	overflow: hidden;
 }
 
@@ -483,15 +491,6 @@ h2{
 .avangard_index .collage.first .collage_img{
 	background: url('../pic/pic_2.jpg') 50% 50% / cover no-repeat;
 }
-.avangard_about .collage.first .collage_img{
-	background: #5999ca url('../pic/pic_7.png') 50% 0 repeat-x;
-}
-
-.avangard_engineering_technical_services .collage.first .collage_img{
-	background: url('../pic/pic_22.jpg') 50% 50% no-repeat;
-	background-size: cover;
-	padding:360px 0;	
-}
 
 .collage_down{
 	background: url('../img/ico_4.png') center no-repeat;
@@ -507,7 +506,7 @@ h2{
 
 .intro,
 .text H2 {
-	width: 50%;
+	max-width: 1180px;
 	margin: 0 auto;
 	text-align: center;
 }
@@ -551,6 +550,9 @@ h2{
 
 .about_text{
 	color: #29343e;
+}
+.about_text.white{
+	color: #fff;
 }
 .about_text.center{
 	text-align: center;
@@ -662,7 +664,62 @@ h2{
 /* /avangard_index */
 
 /* avangard_about */
-.avangard_about .collage.first img{
-	width: auto;
+.avangard_about .container-fluid{
+	background: url('../pic/pic_10.jpg') 50% 0 no-repeat;
+	width: 100%;
 }
+@media (min-width:1920px) {
+	.avangard_about .container-fluid{
+		background: url('../pic/pic_10.jpg') 50% 0 / cover no-repeat;
+		width: 100%;
+	}
+}
+.avangard_about .sect.first{
+	margin: 192px 0;
+}
+.avangard_about .sect.first .about_text{
+	text-align: center;
+	font-weight: 300;
+}
+.avangard_about .sect.first .about_text h1{
+	font-family: 'circe-extralightregular';
+}
+.avangard_about .sect.first .about_text p{
+	letter-spacing: 1px;
+	font-weight: 100;
+}
+.avangard_about .sect.first .collage_animate{
+	text-align: center;
+	margin-top: 80px;
+	position: relative;
+}
+
+.avangard_about .collage_wrap{
+	margin: 0 auto;
+	max-width: 1180px;
+}
+.avangard_about .sect.second .collage_animate{
+	color: #32404c;
+	margin-bottom: 100px;
+}
+.avangard_about .sect.second .collage_text-b,
+.avangard_about .sect.second .collage_pic-b{
+	float: left;
+	width: 48%;
+	margin-left: -2px;
+	margin-right: 2%;
+}
+
+.avangard_about .sect.second .collage_pic-b img{
+	border-radius: 5px;
+}
+.avangard_about .sect.second .collage_animate h2{
+	line-height: 80px;
+	margin-bottom: 22px;
+	margin-top: 10px;
+}
+.avangard_about .sect.second .collage_text-b p{
+	line-height: 30px;
+}
+
 /* /avangard_about */
