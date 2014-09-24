@@ -122,6 +122,10 @@ h2{
 	line-height: 1;
 }
 
+.bg_color_1 {
+	background-color: #f5f8fa;
+}
+
 .btn{
 	min-width: 110px;
 	height: 50px;
@@ -476,7 +480,7 @@ h2{
 	width: 100%;
 }
 .collage.first .collage_img{
-	position: absolute;
+	position: relative;
 	width: 100%;
 	height: 100%;
 }
@@ -490,7 +494,27 @@ h2{
 .avangard_engineering_technical_services .collage.first .collage_img{
 	background: url('../pic/pic_22.jpg') 50% 50% no-repeat;
 	background-size: cover;
+}
+
+.avangard_engineering_technical_services .collage.first .intro {
 	padding:360px 0;	
+}
+
+.avangard_engineering_technical_services  .intro {
+	color:#fff;
+}
+
+.avangard_engineering_technical_services .collage.first .intro H1 {
+	font-size:100px;
+	font-weight: bold;
+}
+
+.avangard_engineering_technical_services .collage.first .intro P {
+	font-size: 20px;
+}
+
+.avangard_engineering_technical_services .text {
+	padding:90px 0;
 }
 
 .collage_down{
@@ -507,7 +531,7 @@ h2{
 
 .intro,
 .text H2 {
-	width: 50%;
+	width: 65%;
 	margin: 0 auto;
 	text-align: center;
 }

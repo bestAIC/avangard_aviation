@@ -12,7 +12,7 @@ include('include/header.php')
 		</div>
 		<div class="collage_down js-collage_down"></div>
 	</section>
-	<section class="text">
+	<section class="text bg_color_1">
 		<h2>We offer the full range of technical services including:</h2>
 
 		<table class="tbl-icons js-animate_to">
@@ -109,7 +109,7 @@ include('include/header.php')
 		</div>
 		<img src="/pic/pic_21.jpg">
 	</section>
-	<section class="text">
+	<section class="text bg_color_1">
 		<div class="intro">
 			<h3>See what a difference meticulous German engineering quality combined with low overhead and respect for your time and expense can make for you</h3>
 			<form action="engineering_technical_services_submit" method="get" accept-charset="utf-8">

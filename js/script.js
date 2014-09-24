@@ -26,6 +26,11 @@ $(function() {
 		win.on('scroll', myScroll1);
 
 		function myScroll1(){
+
+			contFirst.css({
+				height: 'auto'
+			});
+
 			var topScroll = win.scrollTop(),
 				scrollPos = topScroll + windowH;
 
