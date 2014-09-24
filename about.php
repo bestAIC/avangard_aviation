@@ -14,21 +14,21 @@ include('include/header.php')
 	</section>
 	<section class="sect second">
 		<div class="collage_wrap">
-			<div class="collage_animate clearfix">
+			<div class="collage_animate clearfix" id="animate_index_6">
 				<div class="collage_pic-b"><img src="pic/pic_11.jpg" alt=""></div>
 				<div class="collage_text-b">
 					<h2>Flugbereitschaft</h2>
 					<p>The company takes pride in its 40-year history of precision and excellence in German aviation. Begun as a flight school in 1974 going by the name Flugbereitschaft, we enjoy a stellar reputation for our history of training pilots who have gone on to fly for airlines and private jets the world over, as well as for our operations and technical support services.</p>
 				</div>
 			</div>
-			<div class="collage_animate clearfix">
+			<div class="collage_animate clearfix" id="animate_index_7">
 				<div class="collage_text-b">
 					<h2>Avangard Aviation</h2>
 					<p>Upon the entry of new investors, the company has been renamed Avangard Aviation and still enjoys a reputation of excellence and high standards for aircraft maintenance and technical support services at our impeccable 25,000 square foot hangar facilities at Baden Airpark near the world-renowned cultural, spa and historic town of Baden-Baden, between Frankfurt, Germany; Strasbourg, France; and Basel, Switzerland. Avangard Aviation offers the finest of German engineering and technical support services ranging from line maintenance to major checks and overhaul, including a round-the-clock quick-response “Go Team” on stand-by, ready to support aircraft anywhere in the world, on short notice.</p>
 				</div>
 				<div class="collage_pic-b"><img src="pic/pic_12.jpg" alt=""></div>
 			</div>
-			<div class="collage_animate clearfix">
+			<div class="collage_animate clearfix" id="animate_index_8">
 				<div class="collage_pic-b"><img src="pic/pic_13.jpg" alt=""></div>
 				<div class="collage_text-b">
 					<h2>Baden Aircraft  Operations</h2>
