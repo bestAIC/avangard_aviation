@@ -31,6 +31,8 @@
 <!-- 4 -->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/libs/bootstrap.min.js"></script>
+    <script src="js/libs/jquery.formstyler.min.js"></script>
+    <script src='https://maps.googleapis.com/maps/api/js?key=&sensor=false&extension=.js'></script> 
 
 <!-- 5 -->
 	<script src="js/script.js"></script>
@@ -42,6 +44,10 @@
 	<body class="avangard_about">
 <? } else if($pagename == 'avangard_engineering_technical_services') { ?>
 	<body class="avangard_engineering_technical_services">
+<? } else if($pagename == 'managed_aircraft') { ?>
+	<body class="managed_aircraft">
+<? } else if($pagename == 'private_and_cahrter') { ?>
+	<body class="private_and_cahrter">
 <? } else { ?>
 	<body>
 <? } ?>

@@ -43,6 +43,32 @@ EM {font-style:normal;}
 
 }
 
+/* Columns */
+.cols {}
+.col-2,
+.col-3,
+.col-4,
+.col-5 {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: -1px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.col-2 {
+	width: 50%;
+}
+.col-3 {
+	width: 33.3%;
+}
+.col-4 {
+	width: 25%;
+}
+.col-5{
+	width: 20%;
+}
+/* /Columns */
+
 /*sprite*/
 .tbl-icons span.ico_1 {
 	background-position: 0 0; width: 97px; height: 107px;
@@ -180,6 +206,51 @@ INPUT.btn {
 	-webkit-box-shadow: inset 0 -24px rgba(69,67,7,.05); 
 	-moz-box-shadow: inset 0 -24px rgba(69,67,7,.05); 
 	box-shadow: inset 0 -24px rgba(69,67,7,.05);	
+}
+
+
+.jq-selectbox{
+	width: 100%;
+	background: #fff;
+	margin-bottom: 20px;
+	text-align: left;
+	-webkit-box-shadow: inset 0px 0px 0px 2px rgba(85, 106, 124, 1);
+	-moz-box-shadow:    inset 0px 0px 0px 2px rgba(85, 106, 124, 1);
+	box-shadow:         inset 0px 0px 0px 2px rgba(85, 106, 124, 1);
+}
+.jq-selectbox__select{
+	padding: 20px;
+}
+.jq-selectbox__select:after{
+	content: "";
+	display: inline-block;
+	width: 13px;
+	height: 8px;
+	background: url('../img/icons_n.png') -23px 0 no-repeat;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	margin-top: -2px;
+	margin-right: 20px;
+}
+.jq-selectbox__dropdown{
+	top: 60px;
+	width: 100%;
+	border: 2px solid #556a7c;
+}
+.feedback .jq-selectbox__dropdown ul{
+	margin: inherit;
+	width: 100%;
+}
+.jq-selectbox__dropdown li{
+	margin: 0;
+	padding: 20px;
+	background-color: #fff;
+	transition: background-color .25s;
+	border-bottom: 1px solid #e5e7e9;
+}
+.jq-selectbox__dropdown li:hover{
+	background-color: #e5e7e9;
 }
 
 .more_info {
@@ -603,10 +674,6 @@ INPUT.btn {
 	background: #5999ca url('../pic/pic_7.png') 50% 0 repeat-x;
 }
 
-/*.avangard_engineering_technical_services .collage.first .collage_img{
-	background: url('../pic/pic_22.jpg') 50% 50% no-repeat;
-	background-size: cover;
-}*/
 .avangard_engineering_technical_services .collage.first{
 	background: url('../pic/pic_22.jpg') 50% 50% no-repeat;
 	background-size: cover;
@@ -616,8 +683,10 @@ INPUT.btn {
 	padding:360px 0;	
 }
 
-.avangard_engineering_technical_services  .intro {
+.avangard_engineering_technical_services  .intro,
+.managed_aircraft .collage.second  .intro {
 	color:#fff;
+	padding: 100px 0;
 }
 
 .avangard_engineering_technical_services .collage.first .intro H1 {
@@ -638,7 +707,9 @@ INPUT.btn {
 }
 
 .avangard_engineering_technical_services .text,
-.avangard_about .text {
+.avangard_about .text,
+.managed_aircraft .text,
+.private_and_cahrter .text {
 	padding:90px 0;
 }
 
@@ -708,7 +779,7 @@ INPUT.btn {
 	background: linear-gradient(to bottom,  rgba(247,223,87,1) 0%, rgba(255,169,4,1) 100%); /* W3C */	
 }
 
-.avangard_engineering_technical_services .features DIV{
+.features DIV{
 	width:50%;
 }
 .avangard_about .features DIV{
@@ -742,14 +813,15 @@ INPUT.btn {
 	background: url('../img/sprite_icon.png') 0 0 no-repeat;
 }
 
-.collage.second {
-	overflow: hidden;
+.managed_aircraft .collage.second{
+	padding: 0;
 }
-
-.avangard_engineering_technical_services .collage.second IMG {
+.avangard_engineering_technical_services .collage.second IMG,
+.managed_aircraft .collage.second IMG{
 	min-width: 1920px;
 	position: absolute;
-	top:0px;	
+	top:0px;
+	width: 100%;
 }
 
 .collage.second .intro {
@@ -1003,3 +1075,104 @@ INPUT.btn {
 }
 
 /* /avangard_about */
+
+/* managed_aircraft */
+
+.managed_aircraft .collage.first{
+	background: url('../pic/pic_17.jpg') 50% 50% / cover no-repeat;
+}
+.private_and_cahrter .collage.first{
+	background: url('../pic/pic_19.jpg') 50% 50% / cover no-repeat;
+}
+.managed_aircraft .collage.first .intro,
+.private_and_cahrter .collage.first .intro{
+	padding: 360px 0;
+	color: #fff;
+}
+.managed_aircraft .collage.first .intro h1,
+.private_and_cahrter .collage.first .intro h1{
+	font-size: 100px;
+}
+.managed_aircraft .collage.first .intro p,
+.private_and_cahrter .collage.first .intro p{
+	font-size: 20px;
+	padding: 0 140px;
+}
+.private_and_cahrter .collage.second,
+.private_and_cahrter .collage.third{
+	vertical-align: middle;
+	text-align: center;
+}
+.private_and_cahrter .collage.second{
+	background: #f3f6f9;
+	padding-top: 70px;
+}
+.private_and_cahrter .btn_toogle{
+	border-radius: 4px;
+	display: inline-block;
+	margin-top: 26px;
+	border: 2px solid #eeb529;
+	cursor: pointer;
+}
+.private_and_cahrter .btn_toogle .btn{
+	background-color: #eeb529;
+	border-radius: 0;
+	color: #3c2f00;
+	min-width: 190px;
+	height: 46px;
+	vertical-align: middle;
+	box-shadow: inset 0 3px 5px rgba(0,0,0,0);
+	transition: box-shadow .25s;
+}
+.private_and_cahrter .btn_toogle .btn.curent{
+	background-color: #f4ebd1;
+}
+.private_and_cahrter .btn_toogle .btn:active{
+	outline: 0;
+	-webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+	box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+}
+
+.about_raice{
+	max-width: 1180px;
+	margin: 0 auto 150px;
+}
+.about_raice div{
+	border: 2px solid #406280;
+	border-radius: 4px;
+	padding: 19px 0 16px;
+	margin-left: 50px;
+	width: 16%;
+	display: inline-block;
+}
+.about_raice div:first-child{
+	margin-left: 0;
+}
+.about_raice .title{
+	color: #556a7c;
+	font-size: 14px;
+}
+.about_raice .info{
+	font-size: 18px;
+}
+.about_raice .num{
+	font-size: 36px;
+}
+/* /managed_aircraft */
+
+#map {
+    height:700px;
+    width:100%;
+    margin: 0 auto;
+}
+.gm-style-iw * {
+    display: block;
+    width: 100%;
+}
+.gm-style-iw h4, .gm-style-iw p {
+    margin: 0;
+    padding: 0;
+}
+.gm-style-iw a {
+    color: #4272db;
+}

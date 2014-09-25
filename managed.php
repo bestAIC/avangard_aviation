@@ -1,19 +1,19 @@
 <?
-$pagename = 'avangard_engineering_technical_services';
-$pagetitle = 'Avangard Aviation';
+$pagename = 'managed_aircraft';
+$pagetitle = 'managed_aircraft';
 include('include/header.php')
 ?>
 	<section id="js-cont-height" class="collage first">
 		<div class="collage_img">
 			<div class="intro">
-				<h1>Engineering & Technical Services</h1>
-				<p>Avangard Aviation is a full-service aircraft engineering and technical center. Operating under Part 145 Maintenance Organization Approval Certificate DE.145.0473 issued by Luftfahrt-Bundeasamt, the aviation licensing and operational safety oversight organization of Germany, Avangard Aviation provides the finest in German engineering with a state-of-the-art facility and an ideal location in the center of Europe</p>
+				<h1>Managed Aircraft</h1>
+				<p>Headquartered at Baden Airpark near Baden-Baden, the world-renowned, historic thermal spa and cultural center along the Rhine River which constitutes the border between the fabled Black Forest of Germany and Alsace in France, near Strasbourg, France and halfway between Frankfurt, Germany, and Basel, Switzerland, Avangard Aviation’s aircraft operations arm, Baden Aircraft Operations GmbH, operates under Air Operator’s Certificate D-273EG issued by Luftfahrt-Bundeasamt, the aviation licensing and operational safety oversight organization of Germany, and pursuant to Europe’s aviation safety oversight agency, EASA</p>
 			</div>
 		</div>
 		<div class="collage_down js-collage_down"></div>
 	</section>
 	<section class="text first bg_color_1">
-		<h2>We offer the full range of technical services including:</h2>
+		<h2>We offer the full range of AOC, operations and management services, including:</h2>
 
 		<table class="tbl-icons js-animate_to">
 			<tr>
@@ -101,13 +101,13 @@ include('include/header.php')
 		</table>
 
 	</section>
-	<section class="collage second" id="engineering_technical_services_animate_2" >
+	<section class="collage second" id="managed_aircraft_animate_1" >
 		<div class="intro">
 			<h3>Our team of German engineers is capable of handling any and all of your aircraft technical needs</h3>
 			<p>Our location at Baden Airpark in the heart of central Europe reduces your ferry flight costs while our low overhead and stringent cost controls, combined with our respect for your time and your money, minimize your expenses.</p>
 			<p>Quick access to several major commercial airports allows our AOG “Go Team” to be on-site anywhere in the world, rapidly.</p>
 		</div>
-		<img src="pic/pic_21.jpg"/>
+		<img src="pic/pic_18.jpg"/>
 	</section>
 	<section class="text second bg_color_1">
 		<div class="intro">
@@ -121,7 +121,11 @@ include('include/header.php')
 				</li>
 				<li>
 					<select name="engineering">
-						<option>Engineering services</option>
+						<option value="0">Engineering services</option>
+						<option value="1">Engineering services</option>
+						<option value="2">Engineering services</option>
+						<option value="3">Engineering services</option>
+						<option value="4">Engineering services</option>
 					</select>
 				</li>
 				<li>

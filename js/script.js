@@ -35,15 +35,66 @@ $(function() {
 		$('.avangard_about #animate_index_8').animateImg4();
 	}
 
-	if($('#engineering_technical_services_animate_2').length){
-		$('#engineering_technical_services_animate_2').animateImg9();
+	if($('#engineering_technical_services_animate_2').length || $('#managed_aircraft_animate_1').length){
+		$('#engineering_technical_services_animate_2, #managed_aircraft_animate_1').animateImg9();
 	}
 
 	if($('.avangard_about .collage_birds').length){		
 		$('.avangard_about .collage_birds').animateImg5();
 	}
 
+	setTimeout(function() {
+		$('select').styler();
+	}, 100);
+
+	$('.cols > *').cleanWS();
+
+	if($('#map').length){
+		$('#map').mapAnimate();
+	}
+
 });
+
+(function($) {
+
+	$.fn.cleanWS = function(options){
+		this.each(function(){
+			var iblock = this, par = iblock.parentNode, prev = iblock.previousSibling, next = iblock.nextSibling;
+			while (prev) {
+				var newprev = prev.previousSibling;
+				if (prev.nodeType == 3 && prev.nodeValue) {
+					for (var i=prev.nodeValue.length-1; i>-1; i--) {
+						var cc = prev.nodeValue.charCodeAt(i);
+						if (cc==9||cc==10||cc==32) {
+							prev.nodeValue = prev.nodeValue.slice(0,i);
+						} else {
+							break;
+						}
+					}
+				}
+				if (prev.nodeType == 8)	par.removeChild(prev); // remove comment
+				prev = newprev;
+			}
+			while (next) {
+				var newnext = next.nextSibling;
+				if (next.nodeType == 3 && next.nodeValue) {
+					while(next.nodeValue.length) {
+						var cc = next.nodeValue.charCodeAt(0);
+						if (cc==9||cc==10||cc==32) {
+							next.nodeValue = next.nodeValue.slice(1);
+						} else {
+							break;
+						}
+					}
+				}
+				if (next.nodeType == 8)	par.removeChild(next); // remove comment
+				next = newnext;
+			}
+
+		});
+	}
+
+})(jQuery);
 
 (function($){
 	$.fn.animateCollage = function(){
@@ -232,3 +283,69 @@ $(function() {
 		})
 	}
 })(jQuery);
+
+(function($){
+	$.fn.mapAnimate = function(){
+		google.maps.event.addDomListener(window, 'load', init);
+		    var map;
+		    function init() {
+		        var mapOptions = {
+		            center: new google.maps.LatLng(47.465744,-7.567063),
+		            zoom: 2,
+	                zoomControl: false,
+	                disableDoubleClickZoom: false,
+	                mapTypeControl: false,
+	                scaleControl: false,
+	                scrollwheel: false,
+	                panControl: false,
+	                streetViewControl: false,
+	                draggable : false,
+	                overviewMapControl: false,
+	                overviewMapControlOptions: {
+	                    opened: false,
+	                },
+		            mapTypeId: google.maps.MapTypeId.ROADMAP,
+		            styles: [
+		            	{
+							"featureType": "water",
+							"elementType": "geometry",
+							"stylers": [{ "color": "#ffffff" }]
+						},{
+							"featureType": "landscape",
+							"elementType": "geometry",
+							"stylers": [{ "color": "#f4f5f6" }]
+						},{
+							"elementType": "labels.text",
+							"stylers": [{ "visibility": "off" }]
+						}
+		            ],
+		        }
+		        var mapElement = document.getElementById('map');
+		        var map = new google.maps.Map(mapElement, mapOptions);
+		        var locations = [
+					['moskow', 'undefined', 'undefined', 'undefined', 'undefined', 55.755826, 37.6173, 'img/ico_7.png'],
+					['new-york', 'undefined', 'undefined', 'undefined', 'undefined', 40.7127837, -74.0059413, 'img/ico_7.png'],
+					['paris', 'undefined', 'undefined', 'undefined', 'undefined', 48.856614, 2.3522219, 'img/ico_7.png'],
+					['berlin', 'undefined', 'undefined', 'undefined', 'undefined', 52.52000659999999, 13.404954, 'img/ico_7.png']
+		        ];
+		        for (i = 0; i < locations.length; i++) {
+					if (locations[i][1] =='undefined'){ description ='';} else { description = locations[i][1];}
+					if (locations[i][2] =='undefined'){ telephone ='';} else { telephone = locations[i][2];}
+					if (locations[i][3] =='undefined'){ email ='';} else { email = locations[i][3];}
+		           if (locations[i][4] =='undefined'){ web ='';} else { web = locations[i][4];}
+		           if (locations[i][7] =='undefined'){ markericon ='';} else { markericon = locations[i][7];}
+		            marker = new google.maps.Marker({
+		                icon: markericon,
+		                position: new google.maps.LatLng(locations[i][5], locations[i][6]),
+		                map: map,
+		                title: locations[i][0],
+		                desc: description,
+		                tel: telephone,
+		                email: email,
+		                web: web
+		            });
+		        }
+		}
+	}
+})(jQuery);
+
