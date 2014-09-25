@@ -35,7 +35,15 @@ $(function() {
 		$('#animate_index_8').animateImg4();
 	}
 
+<<<<<<< HEAD
 	if($('.avangard_about .collage_birds').length){
+=======
+	if($('#engineering_technical_services_animate_2').length){
+		$('#engineering_technical_services_animate_2').animateImg9();
+	}	
+
+	if($('.collage_birds').length){
+>>>>>>> FETCH_HEAD
 		$('.collage_birds').animateImg5();
 	}
 
@@ -94,7 +102,7 @@ $(function() {
 
 		function myScroll2(){
 			var topScroll = win.scrollTop(),
-				scrollPos = (topScroll + windowH) + textCnt1.height()*2;
+				scrollPos = (topScroll + windowH) + textCnt1.height();
 			if(scrollPos > posA2){
 				textCnt1.css({opacity: 1});
 			}
@@ -110,6 +118,7 @@ $(function() {
 			}
 			return false;
 		}
+
 	}
 })(jQuery);
 
@@ -204,6 +213,26 @@ $(function() {
 			if(posEl < windowH + posWin + 50){
 				cont.addClass('action');
 			} 
+		})
+	}
+})(jQuery);
+
+(function($){
+	$.fn.animateImg9 = function(){
+		var cont = $(this),
+			win = $(window);
+
+		win.on('scroll', function(){
+			var posEl = cont.offset().top,
+				posWin = win.scrollTop(),
+				heightW = win.height,
+				delta = posWin - posEl;
+
+				if(posEl < windowH + posWin + 50){
+					cont.find('img').css({
+						top: -700-delta/2
+					});
+				}
 		})
 	}
 })(jQuery);

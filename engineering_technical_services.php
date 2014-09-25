@@ -101,13 +101,13 @@ include('include/header.php')
 		</table>
 
 	</section>
-	<section class="collage second">
+	<section class="collage second" id="engineering_technical_services_animate_2" >
 		<div class="intro">
 			<h3>Our team of German engineers is capable of handling any and all of your aircraft technical needs</h3>
 			<p>Our location at Baden Airpark in the heart of central Europe reduces your ferry flight costs while our low overhead and stringent cost controls, combined with our respect for your time and your money, minimize your expenses.</p>
 			<p>Quick access to several major commercial airports allows our AOG “Go Team” to be on-site anywhere in the world, rapidly.</p>
 		</div>
-		<img src="/pic/pic_21.jpg">
+		<img src="/pic/pic_21.jpg"/>
 	</section>
 	<section class="text second bg_color_1">
 		<div class="intro">
