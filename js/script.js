@@ -20,31 +20,27 @@ $(function() {
 	}
 
 	if($('.avangard_about #animate_index_5').length){
-		$('#animate_index_5').airLoadMove();
+		$('.avangard_about #animate_index_5').airLoadMove();
 	}
 
 	if($('.avangard_about #animate_index_6').length){
-		$('#animate_index_6').animateImg2();
+		$('.avangard_about #animate_index_6').animateImg2();
 	}
 
 	if($('.avangard_about #animate_index_7').length){
-		$('#animate_index_7').animateImg3();
+		$('.avangard_about #animate_index_7').animateImg3();
 	}
 
 	if($('.avangard_about #animate_index_8').length){
-		$('#animate_index_8').animateImg4();
+		$('.avangard_about #animate_index_8').animateImg4();
 	}
 
-<<<<<<< HEAD
-	if($('.avangard_about .collage_birds').length){
-=======
 	if($('#engineering_technical_services_animate_2').length){
 		$('#engineering_technical_services_animate_2').animateImg9();
-	}	
+	}
 
-	if($('.collage_birds').length){
->>>>>>> FETCH_HEAD
-		$('.collage_birds').animateImg5();
+	if($('.avangard_about .collage_birds').length){		
+		$('.avangard_about .collage_birds').animateImg5();
 	}
 
 });
