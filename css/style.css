@@ -707,9 +707,10 @@ INPUT.btn {
 	overflow: hidden;
 }
 
-.collage.second IMG {
+.avangard_engineering_technical_services .collage.second IMG {
+	min-width: 1920px;
 	position: absolute;
-	top:-300px;	
+	top:0px;	
 }
 
 .collage.second .intro {
