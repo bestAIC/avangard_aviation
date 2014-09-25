@@ -1,6 +1,6 @@
 </div>	
 	<footer id="footer">
-		<div class="row">
+		<div class="footer_contact row">
 			<figure class="logo col-xs-3">
 				<img src="img/logo_footer.png" width="200px" alt="logo">
 			</figure>
