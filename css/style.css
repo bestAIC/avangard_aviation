@@ -251,7 +251,7 @@ INPUT.btn {
 
 .container-fluid{
 	padding: 0;
-	min-width: 1220px;
+	min-width: 1180px;
 	overflow: hidden;
 }
 
@@ -260,8 +260,10 @@ INPUT.btn {
 	top: 0;
 	left: 0;
 	width: 100%;
-	padding: 0 50px;
+	padding: 0 20px;
 	z-index: 10;
+	min-width: 1180px;
+	border-bottom: 1px solid rgba(255,255,255, 0.1);
 }
 
 #header.color_1{
@@ -284,7 +286,6 @@ INPUT.btn {
 }
 
 .header_top{
-	border-bottom: 1px solid rgba(255,255,255, 0.1);
 	position: relative;
 }
 .menu_top{
@@ -466,7 +467,7 @@ INPUT.btn {
 	overflow: hidden;
 }
 #footer .footer_contact{
-	padding: 0 50px;
+	padding: 0 20px;
 }
 #footer .logo{
 	text-align: center;
@@ -534,11 +535,11 @@ INPUT.btn {
 .footer_autor .copyright{
 	font-size: 16px;
 	text-align: left;
-	padding-left: 50px;
+	padding-left: 20px;
 }
 .footer_autor .autor{
 	text-align: right;
-	padding-right: 50px;
+	padding-right: 20px;
 }
 .footer_autor .autor span{
 	line-height: 22px;

@@ -19,23 +19,23 @@ $(function() {
 		$('#animate_index_3, #animate_index_4').animateImg1();
 	}
 
-	if($('#animate_index_5').length){
+	if($('.avangard_about #animate_index_5').length){
 		$('#animate_index_5').airLoadMove();
 	}
 
-	if($('#animate_index_6').length){
+	if($('.avangard_about #animate_index_6').length){
 		$('#animate_index_6').animateImg2();
 	}
 
-	if($('#animate_index_7').length){
+	if($('.avangard_about #animate_index_7').length){
 		$('#animate_index_7').animateImg3();
 	}
 
-	if($('#animate_index_8').length){
+	if($('.avangard_about #animate_index_8').length){
 		$('#animate_index_8').animateImg4();
 	}
 
-	if($('.collage_birds').length){
+	if($('.avangard_about .collage_birds').length){
 		$('.collage_birds').animateImg5();
 	}
 
@@ -203,9 +203,7 @@ $(function() {
 
 			if(posEl < windowH + posWin + 50){
 				cont.addClass('action');
-			} else {
-				cont.removeClass('action');
-			}
+			} 
 		})
 	}
 })(jQuery);
