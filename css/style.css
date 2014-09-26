@@ -2,6 +2,10 @@ html {
 /* 	-webkit-font-smoothing: antialiased; */
 }
 
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary{
+	display: block;
+}
+
 /* Elements */
 * {margin:0; padding:0;}
 HTML {height:100%;}
@@ -15,6 +19,17 @@ A:hover {color:#013e83;}
 P {line-height:1.5em;letter-spacing: -0.1px}
 UL, UL LI {list-style-type:none;}
 EM {font-style:normal;}
+
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:before, :after{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;	
+}
 
 /* fonts */
 
@@ -69,6 +84,14 @@ EM {font-style:normal;}
 }
 /* /Columns */
 
+.clearfix:before, .clearfix:after{
+	display: table;
+	content: " ";
+}
+.clearfix:after{
+	clear: both;
+}
+
 /*sprite*/
 .tbl-icons span.ico_1 {
 	background-position: 0 0; width: 97px; height: 107px;
@@ -114,8 +137,19 @@ EM {font-style:normal;}
 	background-position: 0 -1616px; width: 177px; height: 111px;
 }
 
-
-
+.managed_aircraft .tbl-icons span{background: url('../img/sprite_icon_2.png') 0 0 no-repeat}
+.managed_aircraft .tbl-icons span.ico_1{ background-position: 0 0; width: 112px; height: 77px; } 
+.managed_aircraft .tbl-icons span.ico_2{ background-position: 0 -441px; width: 104px; height: 74px; } 
+.managed_aircraft .tbl-icons span.ico_3{ background-position: 0 -535px; width: 133px; height: 76px; } 
+.managed_aircraft .tbl-icons span.ico_4{ background-position: 0 -631px; width: 96px; height: 101px; } 
+.managed_aircraft .tbl-icons span.ico_5{ background-position: 0 -752px; width: 94px; height: 77px; } 
+.managed_aircraft .tbl-icons span.ico_6{ background-position: 0 -849px; width: 99px; height: 83px; } 
+.managed_aircraft .tbl-icons span.ico_7{ background-position: 0 -952px; width: 121px; height: 86px; } 
+.managed_aircraft .tbl-icons span.ico_8{ background-position: 0 -1058px; width: 90px; height: 90px; } 
+.managed_aircraft .tbl-icons span.ico_9{ background-position: 0 -1168px; width: 79px; height: 94px; } 
+.managed_aircraft .tbl-icons span.ico_10{ background-position: 0 -97px; width: 188px; height: 106px; } 
+.managed_aircraft .tbl-icons span.ico_11{ background-position: 0 -223px; width: 111px; height: 91px; } 
+.managed_aircraft .tbl-icons span.ico_12{ background-position: 0 -334px; width: 135px; height: 87px; } 
 
 .sprite-icon_12{ background-position: 0 -324px; width: 112px; height: 77px; } 
 .sprite-icon_13{ background-position: 0 -411px; width: 104px; height: 74px; } 
@@ -184,6 +218,10 @@ SELECT {
 	box-sizing: border-box;
 	border:2px solid #556a7c;
 	margin:0 0 20px 0; 
+	font-size: 18px;
+	outline: none;
+	font: 18px "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: 300;
 }
 
 TEXTAREA {
@@ -193,6 +231,10 @@ TEXTAREA {
 	box-sizing: border-box;
 	border:2px solid #556a7c;
 	margin:0 0 20px 0; 
+	font-size: 18px;
+	outline: none;
+	font: 18px "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: 300;
 }
 
 INPUT.btn {
@@ -202,7 +244,8 @@ INPUT.btn {
 	-webkit-border-radius: 2px; 
 	-moz-border-radius: 2px; 
 	border-radius: 2px; 
-	background-color: #eeb529; 
+	background-color: #eeb529;
+	border: 2px solid #eeb529;
 	-webkit-box-shadow: inset 0 -24px rgba(69,67,7,.05); 
 	-moz-box-shadow: inset 0 -24px rgba(69,67,7,.05); 
 	box-shadow: inset 0 -24px rgba(69,67,7,.05);	
@@ -214,6 +257,7 @@ INPUT.btn {
 	background: #fff;
 	margin-bottom: 20px;
 	text-align: left;
+	cursor: pointer;
 	-webkit-box-shadow: inset 0px 0px 0px 2px rgba(85, 106, 124, 1);
 	-moz-box-shadow:    inset 0px 0px 0px 2px rgba(85, 106, 124, 1);
 	box-shadow:         inset 0px 0px 0px 2px rgba(85, 106, 124, 1);
@@ -358,6 +402,8 @@ INPUT.btn {
 
 .header_top{
 	position: relative;
+	max-width: 1180px;
+	margin: 0 auto;
 }
 .menu_top{
 	vertical-align: middle;
@@ -432,6 +478,10 @@ INPUT.btn {
 	vertical-align: middle;
 	text-align: center;
 	color: #3c2f00;
+	line-height: 1;
+}
+.header_top .lang_btn span{
+	padding-top: 6px;
 }
 .header_top .lang_dropdown{
 	min-width: 90px;
@@ -499,7 +549,7 @@ INPUT.btn {
 }
 
 .header_top .lang_dropdown-menu{
-	right: 0;
+	position: absolute;
 	left: auto;
 	box-shadow: none;
 	border: none;
@@ -509,6 +559,19 @@ INPUT.btn {
 	color: #001124;
 	padding: 0;
 	margin: 0;
+	z-index: 100;
+	background-color: #fff;
+	font-size: 14px;
+	text-align: left;
+	list-style: none;
+	float: left;
+	border-radius: 4px;
+}
+.lang_dropdown.closed .lang_dropdown-menu{
+	display: none;
+}
+.lang_dropdown.opened .lang_dropdown-menu{
+	display: block;
 }
 .header_top .lang_dropdown-menu li{
 	cursor: pointer;
@@ -539,13 +602,20 @@ INPUT.btn {
 }
 #footer .footer_contact{
 	padding: 0 20px;
+	max-width: 1220px;
+	margin: 0 auto;
 }
 #footer .logo{
 	text-align: center;
+	float: left;
+}
+.footer_nav{
+	margin-left: 290px;
 }
 .footer_menu{
 	text-align: left;
 	margin: 0;
+	height: 60px;
 	padding-bottom: 10px;
 	border-bottom: 1px solid rgba(255,255,255, 0.1);
 }
@@ -588,6 +658,9 @@ INPUT.btn {
 	width: 32px;
 	float: left;
 }
+.footer_text-cont div{
+	padding-left: 20px;
+}
 .footer_text-cont p,
 .footer_text-cont a{
 	color: #9ba7b1;
@@ -596,12 +669,16 @@ INPUT.btn {
 	font-size: 16px;
 	margin: 0;
 	line-height: 30px;
-	margin-left: 42px;
+	margin-left: 40px;
 }
 .footer_autor{
 	border-top: 1px solid rgba(255,255,255, 0.1);
 	padding: 20px 0 30px;
 	color: #49545d;
+}
+.footer_autor .footer_autor-wrap{
+	max-width: 1180px;
+	margin: 0 auto;
 }
 .footer_autor .copyright{
 	font-size: 16px;
@@ -620,6 +697,9 @@ INPUT.btn {
 .footer_autor .autor a{
 	color: #49545d;
 	font-size: 16px;
+}
+.footer_autor .autor img{
+	vertical-align: top;
 }
 
 /* avangard_index */
@@ -748,7 +828,6 @@ INPUT.btn {
 }
 
 .features DIV {
-	float:left;
 	position: relative;
 	padding: 0 60px;
 }
@@ -779,12 +858,7 @@ INPUT.btn {
 	background: linear-gradient(to bottom,  rgba(247,223,87,1) 0%, rgba(255,169,4,1) 100%); /* W3C */	
 }
 
-.features DIV{
-	width:50%;
-}
-.avangard_about .features DIV{
-	width: 33%;
-}
+
 
 .feedback UL {
 	margin: 50px auto 0 auto;
@@ -800,6 +874,14 @@ INPUT.btn {
 	text-align: center;
 	vertical-align: middle;
 	padding:40px;
+}
+
+.tbl-icons TD[colspan="3"] p{
+	padding: 0 80px;
+	float: left;
+}
+.tbl-icons TD[colspan="3"]:first-child p{
+	float: right;
 }
 
 .tbl-icons .odd TD {

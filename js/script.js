@@ -11,8 +11,9 @@ $(function() {
 		$("footer.footer").addClass("navbar-fixed-bottom");
 	}
 
+	// заглавная картинка
 	if($('#js-cont-height').length){
-		$('#js-cont-height').animateCollage();	
+		$('#js-cont-height').animateCollage();
 	}
 	
 	if($('#animate_index_3').length || $('#animate_index_4').length){
@@ -43,11 +44,15 @@ $(function() {
 		$('.avangard_about .collage_birds').animateImg5();
 	}
 
+	$('#header .lang_dropdown').menuLangShow();
+
 	setTimeout(function() {
-		$('select').styler();
+		$('select').styler({
+			selectSmartPositioning: false,
+			selectSearchLimit: 7
+		});
 	}, 100);
 
-	$('.cols > *').cleanWS();
 
 	if($('#map').length){
 		$('#map').mapAnimate();
@@ -55,46 +60,26 @@ $(function() {
 
 });
 
-(function($) {
+(function($){
+	$.fn.menuLangShow = function(){
+		var btn = $(this);
 
-	$.fn.cleanWS = function(options){
-		this.each(function(){
-			var iblock = this, par = iblock.parentNode, prev = iblock.previousSibling, next = iblock.nextSibling;
-			while (prev) {
-				var newprev = prev.previousSibling;
-				if (prev.nodeType == 3 && prev.nodeValue) {
-					for (var i=prev.nodeValue.length-1; i>-1; i--) {
-						var cc = prev.nodeValue.charCodeAt(i);
-						if (cc==9||cc==10||cc==32) {
-							prev.nodeValue = prev.nodeValue.slice(0,i);
-						} else {
-							break;
-						}
-					}
-				}
-				if (prev.nodeType == 8)	par.removeChild(prev); // remove comment
-				prev = newprev;
-			}
-			while (next) {
-				var newnext = next.nextSibling;
-				if (next.nodeType == 3 && next.nodeValue) {
-					while(next.nodeValue.length) {
-						var cc = next.nodeValue.charCodeAt(0);
-						if (cc==9||cc==10||cc==32) {
-							next.nodeValue = next.nodeValue.slice(1);
-						} else {
-							break;
-						}
-					}
-				}
-				if (next.nodeType == 8)	par.removeChild(next); // remove comment
-				next = newnext;
-			}
-
+		$('html').on('click', function(e){
+			btn.addClass('closed').removeClass('opened');
 		});
-	}
 
+		btn.on('click', function(event){
+			event.stopPropagation();
+			if(btn.hasClass('closed')){
+				btn.addClass('opened').removeClass('closed');
+			} else {
+				btn.addClass('closed').removeClass('opened');
+			}
+		})
+	}
 })(jQuery);
+
+
 
 (function($){
 	$.fn.animateCollage = function(){
@@ -288,6 +273,8 @@ $(function() {
 	$.fn.mapAnimate = function(){
 		google.maps.event.addDomListener(window, 'load', init);
 		    var map;
+		    var marker;
+		    var line;
 		    function init() {
 		        var mapOptions = {
 		            center: new google.maps.LatLng(47.465744,-7.567063),
@@ -300,6 +287,10 @@ $(function() {
 	                panControl: false,
 	                streetViewControl: false,
 	                draggable : false,
+	                backgroundColor: {
+	                    stroke: '#ffffff',
+	                    strokeWidth: '2'
+	                },
 	                overviewMapControl: false,
 	                overviewMapControlOptions: {
 	                    opened: false,
@@ -307,21 +298,28 @@ $(function() {
 		            mapTypeId: google.maps.MapTypeId.ROADMAP,
 		            styles: [
 		            	{
+							"featureType": "administrative",
+							"stylers": [
+							{ "color": "#ffffff" },
+							{ "visibility": "off" }
+						]
+						},{
 							"featureType": "water",
-							"elementType": "geometry",
-							"stylers": [{ "color": "#ffffff" }]
+							"stylers": [
+							{ "color": "#ffffff" }
+						]
 						},{
 							"featureType": "landscape",
-							"elementType": "geometry",
-							"stylers": [{ "color": "#f4f5f6" }]
-						},{
-							"elementType": "labels.text",
-							"stylers": [{ "visibility": "off" }]
+							"stylers": [
+							{ "visibility": "on" },{ "hue": "#ffffff" }, { "lightness": 14 }, { "color": "#f4f5f6" }, { "saturation": 3 }, { "gamma": 0.4 }
+						]
 						}
-		            ],
+						],
 		        }
+
 		        var mapElement = document.getElementById('map');
 		        var map = new google.maps.Map(mapElement, mapOptions);
+
 		        var locations = [
 					['moskow', 'undefined', 'undefined', 'undefined', 'undefined', 55.755826, 37.6173, 'img/ico_7.png'],
 					['new-york', 'undefined', 'undefined', 'undefined', 'undefined', 40.7127837, -74.0059413, 'img/ico_7.png'],
@@ -345,6 +343,47 @@ $(function() {
 		                web: web
 		            });
 		        }
+
+		        // dashed air_border
+		        var lineCoordinates = [
+		          new google.maps.LatLng(55.755, 37.617),
+		          new google.maps.LatLng(40.712, -74.005)
+		        ];
+
+		        var lineSymbol = {
+		          path: 'M15.3,11.5L9.1,8.4L8.4,2.1l-1.6-1l-1,7.3L0,12.7l1.6,1l5.9-2.4l5.6,3.9L5,24l1.6,1l12.7-6.1l5.4,3.3c1,0.6,3.5,1,4.1-0.1 l0,0c0.6-1-0.9-3.1-1.9-3.7l-5.5-3.3L20.6,1L19,0L15.3,11.5z',
+		          strokeOpacity: 0,
+		          anchor: new google.maps.Point(15,0),
+		          fillOpacity: 1,
+		          fillColor: '#ffb500',
+		          scale: 1
+		        };
+
+				line = new google.maps.Polyline({
+					path: lineCoordinates,
+					geodesic: true,
+					strokeColor: '#ffb500',
+					strokeOpacity: 1.0,
+					strokeWeight: 2,
+					icons: [{
+						icon: {path: google.maps.SymbolPath.FORWARD_OPEN_ARROW},
+						offset: '80%'
+					}],
+					map: map
+				});
+
+				animateCircle();
+		} // init
+
+		function animateCircle() { // функция анимирует каждый первый символ линии
+		    var count = 0;
+		    window.setInterval(function() {
+		      count = (count + 1) % 200;
+
+		      var icons = line.get('icons');
+		      icons[0].offset = (count / 2) + '%';
+		      line.set('icons', icons);
+		  }, 20);
 		}
 	}
 })(jQuery);

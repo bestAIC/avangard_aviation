@@ -48,20 +48,18 @@ include('include/header.php')
 		</div>
 	</section>
 	<section class="text">
-		<div class="features">
-			<div class="left">
+		<div class="features cols">
+			<div class="left col-3">
 				<p class="ico_cover"><span class="ico_22"></span></p>
 				<h4>Engineering & Technical Services</h4>
 				<p>is the world leader in private aviation, with a portfolio of services that includes fractional ownership, jet cards, aircraft management and charter</p>
 				<p><a href="#" class="more_info">Learn more</a></p>
-			</div>
-			<div class="left">
+			</div><div class="left col-3">
 				<p class="ico_cover"><span class="ico_23"></span></p>
 				<h4>Private<br/> Flights</h4>
 				<p>is the world leader in private aviation, with a portfolio of services that includes fractional ownership, jet cards, aircraft management and charter</p>
 				<p><a href="#" class="more_info">Learn more</a></p>
-			</div>
-			<div class="right">
+			</div><div class="right col-3">
 				<p class="ico_cover"><span class="ico_24"></span></p>
 				<h4>Private<br/> Flights</h4>
 				<p>is the world leader in private aviation, with a portfolio of services that includes fractional ownership, jet cards, aircraft management and charter</p>
