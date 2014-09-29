@@ -44,14 +44,17 @@
 	<body class="managed_aircraft">
 <? } else if($pagename == 'private_and_cahrter') { ?>
 	<body class="private_and_cahrter">
+<? } else if($pagename == 'links') { ?>
+	<body class="links">
 <? } else { ?>
 	<body>
 <? } ?>
+<div class="wrapper">
 <header id="header" class="color_1">
 	<div class="header_shadow"></div>
 	<div class="row header_top">
 		<nav class="col-3 menu_top">
-			<a href="#0" class="menu_top-btn">
+			<a href="#0" class="menu_top-btn close" id="menu_trigger-top">
 				<span class="menu_top-ico"><span></span></span>
 				<span class="menu_top-txt">Menu</span>
 			</a>
@@ -62,7 +65,7 @@
 				<li><a href="#0"></a></li>
 				<li><a href="#0"></a></li>
 			</ul>
-		</nav><div class="col-3 logo"><a href="#0"><img src="img/logo.png"  alt="logo"></a>
+		</nav><div class="col-3 logo"><a href="#0"><img src="img/logo.svg" width="184" alt="logo"></a>
 		</div><div class="col-3 lang-b">
 			<div class="lang_wrap">
 				<a href="#0" class="btn yellow lang_btn"><span>Leave request</span></a>

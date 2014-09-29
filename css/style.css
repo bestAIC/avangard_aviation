@@ -381,6 +381,96 @@ INPUT.btn {
 	border-bottom: 1px solid rgba(255,255,255, 0.1);
 }
 
+
+/* menu_top */
+
+.wrapper.blur{
+	-webkit-transition: blur .25s 3s;
+	-o-transition: blur .25s 3s;
+	transition: blur .25s 3s;
+	-webkit-filter: blur(5px); 
+	-moz-filter: blur(5px); 
+	-o-filter: blur(5px); 
+	-ms-filter: blur(5px); 
+	filter: blur(5px);
+}
+
+#menu_overlay{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(107,132,153,0.9);
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+	-webkit-transition: -webkit-transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+	transition: transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+}
+#menu_overlay.open{
+	visibility: visible;
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+	transition: transform 0.4s, opacity 0.4s;
+}
+#menu_overlay-close{
+	background: url('../img/close.png') no-repeat center center;
+	width: 58px;
+	height: 58px;
+	display: inline-block;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	text-indent: 200%;
+	color: transparent;
+	outline: none;
+	z-index: 100;
+	overflow: hidden;
+	border: none;
+	cursor: pointer;
+}
+
+#menu_overlay nav{
+	text-align: center;
+	position: relative;
+	top: 50%;
+	height: 60%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+#menu_overlay ul{
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	display: inline-block;
+	height: 100%;
+	position: relative;
+}
+#menu_overlay ul li{
+	display: block;
+	height: 25%;
+	height: calc(100% / 4);
+	min-height: 54px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+#menu_overlay ul li a{
+	font-size: 54px;
+	font-weight: 100;
+	display: block;
+	color: #fff;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+}
+#menu_overlay ul li a:hover{
+	color: #b4c1cc;
+}
+/* menu_top */
+
 #header.color_1{
 	color: #293948;
 }
@@ -652,24 +742,34 @@ INPUT.btn {
 .footer_text-cont{
 	text-align: left;
 	padding: 40px 0;
-	margin-left: -15px;
+	margin-left: -44px;
 }
 .footer_text-cont .ico{
 	width: 32px;
-	float: left;
+	display: inline-block;
+	vertical-align: top;
+}
+.footer_text-cont div:first-child{
+	padding-left: 0;
 }
 .footer_text-cont div{
-	padding-left: 20px;
+	padding-left: 8%;
+	vertical-align: top;
+	width: auto;
 }
 .footer_text-cont p,
 .footer_text-cont a{
 	color: #9ba7b1;
 }
+.footer_text-cont a:hover{
+	text-decoration: underline;
+}
 .footer_text-cont p{
 	font-size: 16px;
 	margin: 0;
 	line-height: 30px;
-	margin-left: 40px;
+	display: inline-block;
+	margin-left: 10px;
 }
 .footer_autor{
 	border-top: 1px solid rgba(255,255,255, 0.1);
@@ -688,6 +788,7 @@ INPUT.btn {
 .footer_autor .autor{
 	text-align: right;
 	padding-right: 20px;
+	font-size: 16px;
 }
 .footer_autor .autor span{
 	line-height: 22px;
@@ -696,7 +797,6 @@ INPUT.btn {
 }
 .footer_autor .autor a{
 	color: #49545d;
-	font-size: 16px;
 }
 .footer_autor .autor img{
 	vertical-align: top;
@@ -876,12 +976,15 @@ INPUT.btn {
 	padding:40px;
 }
 
-.tbl-icons TD[colspan="3"] p{
-	padding: 0 80px;
-	float: left;
+
+.tbl-icons TD:first-child[colspan="3"],
+.tbl-icons .odd TD:first-child[colspan="3"]{
+	padding-left: 15%;
+	padding-right: 0;
 }
-.tbl-icons TD[colspan="3"]:first-child p{
-	float: right;
+.tbl-icons TD[colspan="3"],
+.tbl-icons .odd TD[colspan="3"]{
+	padding-right: 15%;
 }
 
 .tbl-icons .odd TD {
@@ -1197,7 +1300,7 @@ INPUT.btn {
 	cursor: pointer;
 }
 .private_and_cahrter .btn_toogle .btn{
-	background-color: #eeb529;
+	background-color: #f4ebd1;
 	border-radius: 0;
 	color: #3c2f00;
 	min-width: 190px;
@@ -1206,13 +1309,19 @@ INPUT.btn {
 	box-shadow: inset 0 3px 5px rgba(0,0,0,0);
 	transition: box-shadow .25s;
 }
-.private_and_cahrter .btn_toogle .btn.curent{
-	background-color: #f4ebd1;
+.private_and_cahrter .btn_toogle .btn.current{
+	background-color: #eeb529;
 }
 .private_and_cahrter .btn_toogle .btn:active{
 	outline: 0;
 	-webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
 	box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+}
+.about_race-wrap{
+	display: none;
+}
+.about_race-wrap.visible{
+	display: block;
 }
 
 .about_raice{
@@ -1258,3 +1367,4 @@ INPUT.btn {
 .gm-style-iw a {
     color: #4272db;
 }
+
